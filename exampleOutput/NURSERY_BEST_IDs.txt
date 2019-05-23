@@ -1,0 +1,5364 @@
+~~~~~~~~~~~ Evaluating NURSERY
+--------- N30_T30
+---------------- 1/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_001 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    480ms resulting in 71684 candidates.
+Keeping highest candidates... took     41ms resulting in 15320 candidates.
+Counting IDs... took     20ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|ID|*|ID) 94176 [9417|9417]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|ID|*|ID) 94176 [9417|9417]
+Using parallel stream over blocks
+Sorting took     20ms 553 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:     76ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:    101ms
+total    466ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|ID|ID|*|ID) 97656 [9765|9765]
+
+--- 2: Visiting (ID|FixedValue|*|*|*|*|ID|ID|*|ID) 97656 [9765|9765]
+Using parallel stream over blocks
+Sorting took      2ms 205 blocks.
+Found 25 possible functions on 2 from 103 random target records.
+Filtered to 17.
+induce:     31ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     51ms
+(ID|FixedValue|Map|*|*|*|ID|ID|*|ID) 99055 [9904|9904]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     23ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     43ms
+(ID|FixedValue|*|*|Map|*|ID|ID|*|ID) 99063 [9905|9905]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     17ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     26ms
+(ID|FixedValue|*|*|*|Map|ID|ID|*|ID) 98931 [9892|9892]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:     15ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     23ms
+(ID|FixedValue|*|*|*|*|ID|ID|Map|ID) 98241 [9823|9823]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:     15ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     24ms
+(ID|FixedValue|*|*|*|*|ID|ID|Map|ID) 98241 [9823|9823]is better than all 2
+total    712ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|â™¦|*|â™¦|â™¦|ID|ID|â™¦|ID) 97651 [9765|9765]
+
+--- 3: Visiting (ID|FixedValue|â™¦|*|â™¦|â™¦|ID|ID|â™¦|ID) 97651 [9765|9765]
+Sorting took      0ms 205 blocks.
+Found 17 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:     16ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     25ms
+(ID|FixedValue|â™¦|Map|â™¦|â™¦|ID|ID|â™¦|ID) 99069 [9906|9906]is better than all 2
+Finalizing (ID|FixedValue|â™¦|â™¦|â™¦|â™¦|ID|ID|â™¦|ID) 97651 [9765|9765]
+total    363ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|Map|Map|Map|Map|ID|ID|Map|ID) 99673 [9964|9964]
+
+--- 4: Visiting (ID|FixedValue|Map|Map|Map|Map|ID|ID|Map|ID) 99673 [9964|9964]
+End State found.
+
+Total Runtime:   2270ms
+
+Test Case: 
+(MapTransformation:		[6978]. Unchanged: [2]
+MapTransformation:		[3]
+FrontMaskTransformation:		.[4]y -> "XXXX"y
+MapTransformation:		[4]
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x)
+Score: 43877 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+FixedValueTransformation:		x -> "great_pret_random0"
+MapTransformation:		[4]
+MapTransformation:		[4]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[2]
+IDTransformation:		x -> x)
+Score: 99673 [9964|9964]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  2270ms  	127.2%    	-99.9%    	0.70      	0.06      	0.11      	0.60      
+---------------- 2/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_002 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (3 blocks )
+Matching took    400ms resulting in 70939 candidates.
+Keeping highest candidates... took     24ms resulting in 12343 candidates.
+Counting IDs... took     10ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|*|*|*|*) 65728 [6572|6572]
+
+--- 1: Visiting (ID|ID|*|*|*|*|*|*|*|*) 65728 [6572|6572]
+Using parallel stream over blocks
+Sorting took     35ms 3398 blocks.
+Found 26 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:     20ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     33ms
+(ID|ID|Map|*|*|*|*|*|*|*) 92337 [9232|9232]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     11ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     22ms
+(ID|ID|*|*|Map|*|*|*|*|*) 90515 [9050|9050]is better than all 2
+Found 11 possible functions on 5 from 103 random target records.
+Filtered to 11.
+induce:     14ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     23ms
+(ID|ID|*|*|*|Map|*|*|*|*) 87873 [8786|8786]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:     14ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     22ms
+(ID|ID|*|*|*|*|Map|*|*|*) 82501 [8249|8249]is better than all 2
+Found 9 possible functions on 7 from 103 random target records.
+Filtered to 9.
+induce:     13ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     20ms
+(ID|ID|*|*|*|*|*|Map|*|*) 87863 [8785|8785]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:     11ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|*|*|*|*|Map|*) 88023 [8801|8801]is better than all 2
+Found 14 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:     14ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     21ms
+(ID|ID|*|*|*|*|*|*|*|Map) 87897 [8788|8788]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:     11ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     19ms
+(ID|ID|*|*|*|*|*|*|*|Map) 87897 [8788|8788]is better than all 2
+total    859ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 65720 [6572|6572]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 65720 [6572|6572]
+Sorting took      0ms 3398 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:     11ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|ID|â™¦|Map|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 90768 [9076|9076]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 65720 [6572|6572]
+total    572ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|Map|Map|Map|Map) 99694 [9965|9965]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|Map|Map|Map|Map) 99694 [9965|9965]
+End State found.
+
+Total Runtime:   1970ms
+
+Test Case: 
+(MapTransformation:		[6980]
+IDTransformation:		x -> x
+FrontMaskTransformation:		.[4]y -> "XXXX"y
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+FrontCharTrimTransformation:		[c]*xxx -> xxx
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[r]* -> xxx)
+Score: 43865 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[2]
+MapTransformation:		[2]
+MapTransformation:		[2]
+MapTransformation:		[3])
+Score: 99694 [9965|9965]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1970ms  	127.3%    	-99.9%    	0.69      	0.03      	0.06      	0.31      
+---------------- 3/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_003 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    252ms resulting in 9970 candidates.
+Keeping highest candidates... took      1ms resulting in 9970 candidates.
+Counting IDs... took     10ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|ID|*|*) 82647 [8264|8264]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|ID|*|*) 82647 [8264|8264]
+Using parallel stream over blocks
+Sorting took      4ms 1706 blocks.
+Found 10 possible functions on 1 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+total    124ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|ID|ID|*|*) 93347 [9334|9334]
+
+--- 2: Visiting (ID|FixedValue|*|*|*|*|ID|ID|*|*) 93347 [9334|9334]
+Using parallel stream over blocks
+Sorting took      1ms 636 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|FixedValue|Map|*|*|*|ID|ID|*|*) 98206 [9819|9819]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     10ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|FixedValue|*|*|Map|*|ID|ID|*|*) 97794 [9778|9778]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|*|*|*|Map|ID|ID|*|*) 97372 [9736|9736]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:     11ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|FixedValue|*|*|*|*|ID|ID|Map|*) 97362 [9735|9735]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:     11ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+total    507ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|ID|ID|*|FixedValue) 96777 [9677|9677]
+
+--- 3: Visiting (ID|FixedValue|*|*|*|*|ID|ID|*|FixedValue) 96777 [9677|9677]
+Using parallel stream over blocks
+Sorting took      0ms 293 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|FixedValue|Map|*|*|*|ID|ID|*|FixedValue) 98826 [9881|9881]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     10ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|FixedValue|*|*|Map|*|ID|ID|*|FixedValue) 98794 [9878|9878]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|*|*|*|Map|ID|ID|*|FixedValue) 98572 [9856|9856]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:     11ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+total    376ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|ID|ID|FixedValue|FixedValue) 98137 [9813|9813]
+
+--- 4: Visiting (ID|FixedValue|*|*|*|*|ID|ID|FixedValue|FixedValue) 98137 [9813|9813]
+Using parallel stream over blocks
+Sorting took      0ms 157 blocks.
+Found 21 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|Map|*|*|*|ID|ID|FixedValue|FixedValue) 99146 [9913|9913]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|FixedValue|*|*|Map|*|ID|ID|FixedValue|FixedValue) 99184 [9917|9917]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|Map|ID|ID|FixedValue|FixedValue) 99122 [9911|9911]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|Map|ID|ID|FixedValue|FixedValue) 99122 [9911|9911]is better than all 2
+total    408ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|â™¦|*|â™¦|â™¦|ID|ID|FixedValue|FixedValue) 98133 [9813|9813]
+
+--- 5: Visiting (ID|FixedValue|â™¦|*|â™¦|â™¦|ID|ID|FixedValue|FixedValue) 98133 [9813|9813]
+Sorting took      0ms 157 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|FixedValue|â™¦|Map|â™¦|â™¦|ID|ID|FixedValue|FixedValue) 99181 [9917|9917]is better than all 2
+Finalizing (ID|FixedValue|â™¦|â™¦|â™¦|â™¦|ID|ID|FixedValue|FixedValue) 98133 [9813|9813]
+total    266ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|Map|Map|Map|Map|ID|ID|FixedValue|FixedValue) 99673 [9964|9964]
+
+--- 6: Visiting (ID|FixedValue|Map|Map|Map|Map|ID|ID|FixedValue|FixedValue) 99673 [9964|9964]
+End State found.
+
+Total Runtime:   2012ms
+
+Test Case: 
+(MapTransformation:		[6978]. Unchanged: [2]
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX")
+Score: 43868 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+FixedValueTransformation:		x -> "USUAL"
+MapTransformation:		[2]. Unchanged: [2]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [2]
+MapTransformation:		[2]. Unchanged: [1]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+FixedValueTransformation:		x -> "priority_random0"
+FixedValueTransformation:		x -> "prioritySUFFIX")
+Score: 99673 [9964|9964]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  2012ms  	127.2%    	-99.9%    	0.65      	0.00      	0.00      	0.52      
+---------------- 4/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_004 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    269ms resulting in 73977 candidates.
+Keeping highest candidates... took     12ms resulting in 10457 candidates.
+Counting IDs... took     10ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|*|*) 82907 [8290|8290]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|*|*) 82907 [8290|8290]
+Using parallel stream over blocks
+Sorting took      3ms 1680 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 16.
+induce:     10ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|Map|*|*|*|ID|*|*|*) 95746 [9573|9573]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:     10ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|ID|*|*|Map|*|ID|*|*|*) 95204 [9519|9519]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     12ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|ID|*|*|*|Map|ID|*|*|*) 93682 [9367|9367]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 8.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|*|*|ID|Map|*|*) 93722 [9371|9371]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:     10ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|*|Map|*) 93922 [9391|9391]is better than all 2
+Found 11 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93904 [9389|9389]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93904 [9389|9389]is better than all 2
+total    693ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82900 [8290|8290]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82900 [8290|8290]
+Sorting took      0ms 1680 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 11.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 94968 [9496|9496]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82900 [8290|8290]
+total    349ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99686 [9964|9964]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99686 [9964|9964]
+End State found.
+
+Total Runtime:   1412ms
+
+Test Case: 
+(MapTransformation:		[6979]. Unchanged: [1]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+CapsLockTransformation:		string ->  STRING
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 43862 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]. Unchanged: [1]
+MapTransformation:		[3]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[1]. Unchanged: [2])
+Score: 99686 [9964|9964]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1412ms  	127.3%    	-99.9%    	0.71      	0.10      	0.17      	0.60      
+---------------- 5/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_005 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (3 blocks )
+Matching took    235ms resulting in 75240 candidates.
+Keeping highest candidates... took      9ms resulting in 10383 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|ID|*) 94056 [9405|9405]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|ID|*) 94056 [9405|9405]
+Using parallel stream over blocks
+Sorting took      3ms 565 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 18.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|Map|*|*|*|ID|*|ID|*) 98285 [9827|9827]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:     12ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     19ms
+(ID|ID|*|*|Map|*|ID|*|ID|*) 97953 [9794|9794]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|Map|ID|*|ID|*) 97541 [9753|9753]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|*|*|ID|Map|ID|*) 97701 [9769|9769]is better than all 2
+Found 11 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|ID|*|*|*|*|ID|*|ID|Map) 95463 [9545|9545]is better than all 2
+Found 11 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|ID|*|*|*|*|ID|*|ID|Map) 95463 [9545|9545]is better than all 2
+total    506ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|ID|â™¦) 94050 [9405|9405]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|ID|â™¦) 94050 [9405|9405]
+Sorting took      0ms 565 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|â™¦|Map|â™¦|â™¦|ID|â™¦|ID|â™¦) 97998 [9799|9799]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|ID|â™¦) 94050 [9405|9405]
+total    338ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|ID|Map|ID|Map) 99668 [9963|9963]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|ID|Map|ID|Map) 99668 [9963|9963]
+End State found.
+
+Total Runtime:   1159ms
+
+Test Case: 
+(MapTransformation:		[6980]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[r]* -> xxx)
+Score: 43861 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]. Unchanged: [1]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[3]
+MapTransformation:		[1]. Unchanged: [2]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [1]
+IDTransformation:		x -> x
+MapTransformation:		[0]. Unchanged: [2])
+Score: 99668 [9963|9963]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1159ms  	127.2%    	-99.9%    	0.70      	0.09      	0.16      	0.64      
+---------------- 6/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_006 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    380ms resulting in 75762 candidates.
+Keeping highest candidates... took      7ms resulting in 10406 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|*|*) 82457 [8245|8245]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|*|*) 82457 [8245|8245]
+Using parallel stream over blocks
+Sorting took      4ms 1725 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|Map|*|*|*|ID|*|*|*) 95626 [9561|9561]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|Map|*|ID|*|*|*) 95094 [9508|9508]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     11ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|Map|ID|*|*|*) 93562 [9355|9355]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|*|ID|Map|*|*) 93582 [9357|9357]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|*|Map|*) 93712 [9370|9370]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:     15ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     20ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93544 [9353|9353]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93544 [9353|9353]is better than all 2
+total    663ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82450 [8245|8245]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82450 [8245|8245]
+Sorting took      0ms 1725 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 16.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 95088 [9508|9508]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82450 [8245|8245]
+total    373ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99690 [9965|9965]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99690 [9965|9965]
+End State found.
+
+Total Runtime:   1518ms
+
+Test Case: 
+(MapTransformation:		[6978]. Unchanged: [2]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[e]* -> xxx
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 43862 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[3]
+MapTransformation:		[2]. Unchanged: [1])
+Score: 99690 [9965|9965]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1518ms  	127.3%    	-99.9%    	0.70      	0.02      	0.04      	0.47      
+---------------- 7/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_007 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    253ms resulting in 72688 candidates.
+Keeping highest candidates... took      7ms resulting in 10318 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|*|*) 82867 [8286|8286]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|*|*) 82867 [8286|8286]
+Using parallel stream over blocks
+Sorting took      3ms 1684 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 19.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|Map|*|*|*|ID|*|*|*) 95996 [9598|9598]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|Map|*|ID|*|*|*) 95084 [9507|9507]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|Map|ID|*|*|*) 93812 [9380|9380]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|Map|*|*) 93722 [9371|9371]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|*|Map|*) 93732 [9372|9372]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93834 [9382|9382]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93834 [9382|9382]is better than all 2
+total    606ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82860 [8286|8286]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82860 [8286|8286]
+Sorting took      0ms 1684 blocks.
+Found 14 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:     11ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 95098 [9509|9509]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82860 [8286|8286]
+total    365ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99698 [9966|9966]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99698 [9966|9966]
+End State found.
+
+Total Runtime:   1302ms
+
+Test Case: 
+(MapTransformation:		[6976]. Unchanged: [4]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x)
+Score: 43862 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[1]. Unchanged: [2]
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[2]
+MapTransformation:		[1]. Unchanged: [1])
+Score: 99698 [9966|9966]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1302ms  	127.3%    	-99.9%    	0.69      	0.14      	0.24      	0.55      
+---------------- 8/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_008 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    244ms resulting in 74182 candidates.
+Keeping highest candidates... took      7ms resulting in 10803 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|ID|*) 82977 [8297|8297]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|ID|*) 82977 [8297|8297]
+Using parallel stream over blocks
+Sorting took      3ms 1673 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|Map|*|*|*|*|ID|*|ID|*) 93782 [9377|9377]is better than all 2
+Found 14 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:     11ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|*|*|Map|*|*|ID|*|ID|*) 95294 [9528|9528]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|*|*|*|Map|*|ID|*|ID|*) 94984 [9497|9497]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+total    352ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|FixedValue|ID|*|ID|*) 93747 [9374|9374]
+
+--- 2: Visiting (ID|*|*|*|*|FixedValue|ID|*|ID|*) 93747 [9374|9374]
+Using parallel stream over blocks
+Sorting took      1ms 596 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+total     86ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|FixedValue|ID|*|ID|*) 97477 [9747|9747]
+
+--- 3: Visiting (ID|FixedValue|*|*|*|FixedValue|ID|*|ID|*) 97477 [9747|9747]
+Using parallel stream over blocks
+Sorting took      0ms 223 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 18.
+induce:      6ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:      9ms
+(ID|FixedValue|Map|*|*|FixedValue|ID|*|ID|*) 99096 [9908|9908]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|Map|FixedValue|ID|*|ID|*) 98994 [9898|9898]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|FixedValue|*|*|*|FixedValue|ID|Map|ID|*) 98842 [9883|9883]is better than all 2
+Found 6 possible functions on 9 from 103 random target records.
+Filtered to 6.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|FixedValue|ID|*|ID|Map) 98154 [9814|9814]is better than all 2
+Found 6 possible functions on 9 from 103 random target records.
+Filtered to 6.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|FixedValue|ID|*|ID|Map) 98154 [9814|9814]is better than all 2
+total    476ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|â™¦|*|â™¦|FixedValue|ID|â™¦|ID|â™¦) 97472 [9747|9747]
+
+--- 4: Visiting (ID|FixedValue|â™¦|*|â™¦|FixedValue|ID|â™¦|ID|â™¦) 97472 [9747|9747]
+Sorting took      0ms 223 blocks.
+Found 14 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|FixedValue|â™¦|Map|â™¦|FixedValue|ID|â™¦|ID|â™¦) 98970 [9896|9896]is better than all 2
+Finalizing (ID|FixedValue|â™¦|â™¦|â™¦|FixedValue|ID|â™¦|ID|â™¦) 97472 [9747|9747]
+total    325ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|Map|Map|Map|FixedValue|ID|Map|ID|Map) 99666 [9963|9963]
+
+--- 5: Visiting (ID|FixedValue|Map|Map|Map|FixedValue|ID|Map|ID|Map) 99666 [9963|9963]
+End State found.
+
+Total Runtime:   1573ms
+
+Test Case: 
+(MapTransformation:		[6979]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 43867 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+FixedValueTransformation:		x -> "pretentious_random2"
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[3]. Unchanged: [1]
+FixedValueTransformation:		x -> "convenient"
+IDTransformation:		x -> x
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [2])
+Score: 99666 [9963|9963]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1573ms  	127.2%    	-99.9%    	0.72      	0.02      	0.03      	0.42      
+---------------- 9/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_009 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    232ms resulting in 9970 candidates.
+Keeping highest candidates... took      0ms resulting in 9970 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|*|*) 82117 [8211|8211]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|*|*) 82117 [8211|8211]
+Using parallel stream over blocks
+Sorting took      3ms 1759 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:     11ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|Map|*|*|*|ID|*|*|*) 95596 [9558|9558]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|Map|*|ID|*|*|*) 95014 [9500|9500]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|ID|*|*|*|Map|ID|*|*|*) 93502 [9349|9349]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|ID|*|*|*|*|ID|Map|*|*) 93562 [9355|9355]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|ID|*|*|*|*|ID|*|Map|*) 93622 [9361|9361]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 9.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93354 [9334|9334]is better than all 2
+Found 9 possible functions on 9 from 103 random target records.
+Filtered to 9.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|*|*|ID|*|*|Map) 93354 [9334|9334]is better than all 2
+total    587ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82110 [8211|8211]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82110 [8211|8211]
+Sorting took      0ms 1759 blocks.
+Found 15 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 95108 [9510|9510]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 82110 [8211|8211]
+total    334ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99692 [9965|9965]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|ID|Map|Map|Map) 99692 [9965|9965]
+End State found.
+
+Total Runtime:   1206ms
+
+Test Case: 
+(MapTransformation:		[6980]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearMaskTransformation:		y.[4] -> y"XXXX")
+Score: 43862 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [2]
+MapTransformation:		[3]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[3])
+Score: 99692 [9965|9965]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1206ms  	127.3%    	-99.9%    	0.69      	0.05      	0.10      	0.65      
+---------------- 10/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N30_T30_010 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (9970 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    228ms resulting in 9970 candidates.
+Keeping highest candidates... took      0ms resulting in 9970 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|ID|*|*|*|*) 65988 [6598|6598]
+
+--- 1: Visiting (ID|*|*|*|*|ID|*|*|*|*) 65988 [6598|6598]
+Using parallel stream over blocks
+Sorting took      6ms 3372 blocks.
+Found 8 possible functions on 1 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|*|*|ID|*|*|*|*) 88093 [8808|8808]is better than all 2
+Found 15 possible functions on 3 from 103 random target records.
+Filtered to 13.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|Map|*|ID|*|*|*|*) 90655 [9064|9064]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|ID|*|*|*|*) 90965 [9095|9095]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:      9ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|ID|Map|*|*|*) 82521 [8251|8251]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|ID|*|Map|*|*) 88173 [8816|8816]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|ID|*|*|Map|*) 87843 [8783|8783]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:     13ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     19ms
+(ID|*|*|*|*|ID|*|*|*|Map) 87997 [8798|8798]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|ID|*|*|*|Map) 87997 [8798|8798]is better than all 2
+total    687ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 65980 [6598|6598]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 65980 [6598|6598]
+Sorting took      0ms 3372 blocks.
+Found 16 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:     10ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 92440 [9243|9243]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 65980 [6598|6598]
+total    398ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|ID|Map|Map|Map|Map) 99676 [9963|9963]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|ID|Map|Map|Map|Map) 99676 [9963|9963]
+End State found.
+
+Total Runtime:   1364ms
+
+Test Case: 
+(MapTransformation:		[6979]. Unchanged: [1]
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[r]* -> xxx
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[v]* -> xxx
+IDTransformation:		x -> x
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+CapsLockTransformation:		string ->  STRING)
+Score: 43865 [2990|2990]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[2]. Unchanged: [2]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[2]
+MapTransformation:		[2])
+Score: 99676 [9963|9963]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1364ms  	127.2%    	-99.9%    	0.71      	0.06      	0.10      	0.35      
+--------- N50_T50
+---------------- 1/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_001 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    194ms resulting in 8640 candidates.
+Keeping highest candidates... took      0ms resulting in 8640 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|*|*) 43488 [4348|4348]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|*|*) 43488 [4348|4348]
+Using parallel stream over blocks
+Sorting took      8ms 4292 blocks.
+Found 3 possible functions on 1 from 103 random target records.
+Filtered to 3.
+induce:     11ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+total     49ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|ID|*|*|*) 43488 [4348|4348]
+
+--- 2: Visiting (ID|FixedValue|*|*|*|*|ID|*|*|*) 43488 [4348|4348]
+Using parallel stream over blocks
+Sorting took      7ms 4292 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|Map|*|*|*|ID|*|*|*) 77207 [7719|7719]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|Map|*|ID|*|*|*) 75005 [7499|7499]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:     13ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|FixedValue|*|*|*|Map|ID|*|*|*) 71423 [7141|7141]is better than all 2
+Found 13 possible functions on 7 from 103 random target records.
+Filtered to 13.
+induce:      9ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|ID|Map|*|*) 71323 [7131|7131]is better than all 2
+Found 11 possible functions on 8 from 103 random target records.
+Filtered to 11.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|*|*|*|*|ID|*|Map|*) 71523 [7151|7151]is better than all 2
+Found 15 possible functions on 9 from 103 random target records.
+Filtered to 11.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|ID|*|*|Map) 71537 [7152|7152]is better than all 2
+Found 16 possible functions on 9 from 103 random target records.
+Filtered to 11.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|*|*|*|*|ID|*|*|Map) 71537 [7152|7152]is better than all 2
+total    517ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 43481 [4348|4348]
+
+--- 3: Visiting (ID|FixedValue|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 43481 [4348|4348]
+Sorting took      0ms 4292 blocks.
+Found 17 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 74999 [7499|7499]is better than all 2
+Finalizing (ID|FixedValue|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 43481 [4348|4348]
+total    304ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|Map|Map|Map|Map|ID|Map|Map|Map) 86351 [8630|8630]
+
+--- 4: Visiting (ID|FixedValue|Map|Map|Map|Map|ID|Map|Map|Map) 86351 [8630|8630]
+End State found.
+
+Total Runtime:   1114ms
+
+Test Case: 
+(MapTransformation:		[4319]. Unchanged: [1]
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+MapTransformation:		[4]
+CapsLockTransformation:		string ->  STRING
+MapTransformation:		[3]
+IDTransformation:		x -> x
+FrontCharTrimTransformation:		[p]*xxx -> xxx
+FrontCharTrimTransformation:		[r]*xxx -> xxx
+MapTransformation:		[5])
+Score: 51868 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[4]. Unchanged: [1]
+MapTransformation:		[4]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[3])
+Score: 86351 [8630|8630]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1114ms  	66.5%     	-99.8%    	0.90      	0.09      	0.17      	0.52      
+---------------- 2/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_002 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    241ms resulting in 55231 candidates.
+Keeping highest candidates... took      4ms resulting in 10058 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|ID|*|*) 71777 [7177|7177]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|ID|*|*) 71777 [7177|7177]
+Using parallel stream over blocks
+Sorting took      2ms 1463 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|Map|*|*|*|*|ID|ID|*|*) 81042 [8103|8103]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|*|ID|ID|*|*) 82294 [8228|8228]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 19.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|*|ID|ID|*|*) 82454 [8244|8244]is better than all 2
+Found 1 possible functions on 5 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    273ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|FixedValue|ID|ID|*|*) 71777 [7177|7177]
+
+--- 2: Visiting (ID|*|*|*|*|FixedValue|ID|ID|*|*) 71777 [7177|7177]
+Using parallel stream over blocks
+Sorting took      3ms 1463 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|Map|*|*|*|FixedValue|ID|ID|*|*) 81042 [8103|8103]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|FixedValue|ID|ID|*|*) 82294 [8228|8228]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|FixedValue|ID|ID|*|*) 82454 [8244|8244]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|FixedValue|ID|ID|Map|*) 81342 [8133|8133]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|FixedValue|ID|ID|*|Map) 81424 [8141|8141]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+total    486ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|FixedValue|ID|ID|*|FixedValue) 81417 [8141|8141]
+
+--- 3: Visiting (ID|*|*|*|*|FixedValue|ID|ID|*|FixedValue) 81417 [8141|8141]
+Using parallel stream over blocks
+Sorting took      1ms 499 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 11.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|Map|*|*|*|FixedValue|ID|ID|*|FixedValue) 84122 [8411|8411]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 17.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|FixedValue|ID|ID|*|FixedValue) 84944 [8493|8493]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 18.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|FixedValue|ID|ID|*|FixedValue) 84914 [8490|8490]is better than all 2
+Found 5 possible functions on 8 from 103 random target records.
+Filtered to 5.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|FixedValue|ID|ID|Map|FixedValue) 83672 [8366|8366]is better than all 2
+Found 5 possible functions on 8 from 103 random target records.
+Filtered to 5.
+induce:      7ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|*|FixedValue|ID|ID|Map|FixedValue) 83672 [8366|8366]is better than all 2
+total    440ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|FixedValue|ID|ID|â™¦|FixedValue) 81412 [8141|8141]
+
+--- 4: Visiting (ID|â™¦|*|â™¦|â™¦|FixedValue|ID|ID|â™¦|FixedValue) 81412 [8141|8141]
+Sorting took      0ms 499 blocks.
+Found 20 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:     12ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|â™¦|Map|â™¦|â™¦|FixedValue|ID|ID|â™¦|FixedValue) 84582 [8457|8457]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|FixedValue|ID|ID|â™¦|FixedValue) 81412 [8141|8141]
+total    268ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|FixedValue|ID|ID|Map|FixedValue) 86338 [8630|8630]
+
+--- 5: Visiting (ID|Map|Map|Map|Map|FixedValue|ID|ID|Map|FixedValue) 86338 [8630|8630]
+End State found.
+
+Total Runtime:   1787ms
+
+Test Case: 
+(MapTransformation:		[4320]
+MapTransformation:		[3]
+MapTransformation:		[5]
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[e]* -> xxx
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 51858 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[5]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[3]. Unchanged: [1]
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "priority")
+Score: 86338 [8630|8630]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1787ms  	66.5%     	-99.8%    	0.90      	0.12      	0.21      	0.50      
+---------------- 3/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_003 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    239ms resulting in 59258 candidates.
+Keeping highest candidates... took      5ms resulting in 9445 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|ID|*|*|*|*) 57698 [5769|5769]
+
+--- 1: Visiting (ID|*|*|*|*|ID|*|*|*|*) 57698 [5769|5769]
+Using parallel stream over blocks
+Sorting took      6ms 2871 blocks.
+Found 10 possible functions on 1 from 103 random target records.
+Filtered to 10.
+induce:     15ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     19ms
+(ID|Map|*|*|*|ID|*|*|*|*) 76473 [7646|7646]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 16.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|ID|*|*|*|*) 78525 [7851|7851]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|ID|*|*|*|*) 78575 [7856|7856]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:     10ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|ID|Map|*|*|*) 71901 [7189|7189]is better than all 2
+Found 12 possible functions on 7 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|ID|*|Map|*|*) 76043 [7603|7603]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|ID|*|*|Map|*) 76533 [7652|7652]is better than all 2
+Found 9 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|ID|*|*|*|Map) 76605 [7659|7659]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|ID|*|*|*|Map) 76605 [7659|7659]is better than all 2
+total    627ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 57690 [5769|5769]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 57690 [5769|5769]
+Sorting took      0ms 2871 blocks.
+Found 27 possible functions on 2 from 103 random target records.
+Filtered to 17.
+induce:     10ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|â™¦|Map|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 80000 [7999|7999]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦|â™¦) 57690 [5769|5769]
+total    341ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|ID|Map|Map|Map|Map) 86396 [8635|8635]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|ID|Map|Map|Map|Map) 86396 [8635|8635]
+End State found.
+
+Total Runtime:   1278ms
+
+Test Case: 
+(MapTransformation:		[4318]. Unchanged: [2]
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+FrontCharTrimTransformation:		[c]*xxx -> xxx
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 51852 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[3]. Unchanged: [2]
+MapTransformation:		[3]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[3]
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[3])
+Score: 86396 [8635|8635]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1278ms  	66.6%     	-99.9%    	0.50      	0.05      	0.10      	0.32      
+---------------- 4/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_004 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    213ms resulting in 8640 candidates.
+Keeping highest candidates... took      0ms resulting in 8640 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|*|*|*|*) 58278 [5827|5827]
+
+--- 1: Visiting (ID|ID|*|*|*|*|*|*|*|*) 58278 [5827|5827]
+Using parallel stream over blocks
+Sorting took      5ms 2813 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|Map|*|*|*|*|*|*|*) 80377 [8036|8036]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|Map|*|*|*|*|*) 78845 [7883|7883]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|Map|*|*|*|*) 76563 [7655|7655]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+total    345ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|*|*|*|*|FixedValue|*|*|*) 72258 [7225|7225]
+
+--- 2: Visiting (ID|ID|*|*|*|*|FixedValue|*|*|*) 72258 [7225|7225]
+Using parallel stream over blocks
+Sorting took      2ms 1415 blocks.
+Found 26 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|Map|*|*|*|FixedValue|*|*|*) 83237 [8322|8322]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|Map|*|FixedValue|*|*|*) 82475 [8246|8246]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|Map|FixedValue|*|*|*) 81493 [8148|8148]is better than all 2
+Found 9 possible functions on 7 from 103 random target records.
+Filtered to 9.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|FixedValue|Map|*|*) 81393 [8138|8138]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|FixedValue|*|Map|*) 81373 [8136|8136]is better than all 2
+Found 1 possible functions on 9 from 103 random target records.
+Filtered to 1.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    524ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|*|*|*|*|FixedValue|*|*|FixedValue) 72258 [7225|7225]
+
+--- 3: Visiting (ID|ID|*|*|*|*|FixedValue|*|*|FixedValue) 72258 [7225|7225]
+Using parallel stream over blocks
+Sorting took      2ms 1415 blocks.
+Found 26 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|Map|*|*|*|FixedValue|*|*|FixedValue) 83237 [8322|8322]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|Map|*|FixedValue|*|*|FixedValue) 82475 [8246|8246]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|Map|FixedValue|*|*|FixedValue) 81493 [8148|8148]is better than all 2
+Found 9 possible functions on 7 from 103 random target records.
+Filtered to 9.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|FixedValue|Map|*|FixedValue) 81393 [8138|8138]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|FixedValue|*|Map|FixedValue) 81373 [8136|8136]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|FixedValue|*|Map|FixedValue) 81373 [8136|8136]is better than all 2
+total    530ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|FixedValue|â™¦|â™¦|FixedValue) 72252 [7225|7225]
+
+--- 4: Visiting (ID|ID|â™¦|*|â™¦|â™¦|FixedValue|â™¦|â™¦|FixedValue) 72252 [7225|7225]
+Sorting took      0ms 1415 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|â™¦|Map|â™¦|â™¦|FixedValue|â™¦|â™¦|FixedValue) 82520 [8251|8251]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|FixedValue|â™¦|â™¦|FixedValue) 72252 [7225|7225]
+total    325ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|FixedValue|Map|Map|FixedValue) 86374 [8633|8633]
+
+--- 5: Visiting (ID|ID|Map|Map|Map|Map|FixedValue|Map|Map|FixedValue) 86374 [8633|8633]
+End State found.
+
+Total Runtime:   1994ms
+
+Test Case: 
+(MapTransformation:		[4319]. Unchanged: [1]
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[l]* -> xxx
+FrontCharTrimTransformation:		[c]*xxx -> xxx
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+MapTransformation:		[2]
+RearMaskTransformation:		y.[6] -> y"XXXXXX"
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED")
+Score: 51855 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[5]
+MapTransformation:		[3]
+MapTransformation:		[4]
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "convenient_random0"
+MapTransformation:		[3]
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED")
+Score: 86374 [8633|8633]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1994ms  	66.6%     	-99.8%    	0.49      	0.10      	0.16      	0.35      
+---------------- 5/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_005 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (4 blocks )
+Matching took    239ms resulting in 55376 candidates.
+Keeping highest candidates... took     12ms resulting in 20412 candidates.
+Counting IDs... took     13ms.
+
+Queue (1):
+(*|ID|*|*|*|*|*|ID|ID|ID) 2906 [290|290]
+
+--- 1: Visiting (*|ID|*|*|*|*|*|ID|ID|ID) 2906 [290|290]
+Sorting took     55ms 49 blocks.
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:     10ms
+Finding best on [6]
+138 random source records
+resulting in 43 blocks.
+Evaluation done by sampling 43 different blocks.
+best:     26ms
+total    105ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|ID|*|*|*|*|Prefix|ID|ID|ID) 3506 [350|350]
+
+--- 2: Visiting (*|ID|*|*|*|*|Prefix|ID|ID|ID) 3506 [350|350]
+Using parallel stream over blocks
+Sorting took     12ms 98 blocks.
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:     15ms
+Finding best on [5]
+138 random source records
+resulting in 69 blocks.
+Evaluation done by sampling 69 different blocks.
+best:     41ms
+total     77ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|ID|*|*|*|FrontMask|Prefix|ID|ID|ID) 5616 [561|561]
+
+--- 3: Visiting (*|ID|*|*|*|FrontMask|Prefix|ID|ID|ID) 5616 [561|561]
+Using parallel stream over blocks
+Sorting took      6ms 285 blocks.
+Found 15 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:     19ms
+Finding best on [3]
+138 random source records
+resulting in 105 blocks.
+Evaluation done by sampling 105 different blocks.
+best:     28ms
+total     69ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|ID|*|Prefix|*|FrontMask|Prefix|ID|ID|ID) 11596 [1159|1159]
+
+--- 4: Visiting (*|ID|*|Prefix|*|FrontMask|Prefix|ID|ID|ID) 11596 [1159|1159]
+Using parallel stream over blocks
+Sorting took      7ms 1062 blocks.
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 19.
+induce:     20ms
+Finding best on [4]
+138 random source records
+resulting in 124 blocks.
+Evaluation done by sampling 124 different blocks.
+best:     26ms
+(*|ID|*|Prefix|Map|FrontMask|Prefix|ID|ID|ID) 32323 [3231|3231]is better than all 2
+Found 1462 possible functions on 0 from 103 random target records.
+Filtered to 0.
+induce:     36ms
+Finding best on []
+138 random source records
+resulting in 124 blocks.
+Evaluation done by sampling 124 different blocks.
+best:     38ms
+Found 1429 possible functions on 0 from 103 random target records.
+Filtered to 0.
+induce:     30ms
+Finding best on []
+138 random source records
+resulting in 124 blocks.
+Evaluation done by sampling 124 different blocks.
+best:     31ms
+total    132ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(â™¦|ID|*|Prefix|â™¦|FrontMask|Prefix|ID|ID|ID) 11593 [1159|1159]
+
+--- 5: Visiting (â™¦|ID|*|Prefix|â™¦|FrontMask|Prefix|ID|ID|ID) 11593 [1159|1159]
+Sorting took      0ms 1062 blocks.
+Found 20 possible functions on 2 from 103 random target records.
+Filtered to 20.
+induce:     17ms
+Finding best on [2]
+138 random source records
+resulting in 127 blocks.
+Evaluation done by sampling 127 different blocks.
+best:     23ms
+(â™¦|ID|Map|Prefix|â™¦|FrontMask|Prefix|ID|ID|ID) 59323 [5931|5931]is better than all 2
+Finalizing (â™¦|ID|â™¦|Prefix|â™¦|FrontMask|Prefix|ID|ID|ID) 11593 [1159|1159]
+total    155ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(Map|ID|Map|Prefix|Map|FrontMask|Prefix|ID|ID|ID) 54957 [4707|4707]
+
+--- 6: Visiting (Map|ID|Map|Prefix|Map|FrontMask|Prefix|ID|ID|ID) 54957 [4707|4707]
+End State found.
+
+Total Runtime:    874ms
+
+Test Case: 
+(MapTransformation:		[4318]. Unchanged: [2]
+IDTransformation:		x -> x
+MapTransformation:		[5]
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+MapTransformation:		[4]
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 51861 [4320|4320]
+
+Result: 
+(MapTransformation:		[3933]
+IDTransformation:		x -> x
+MapTransformation:		[5]
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+MapTransformation:		[4]
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 54957 [4707|4707]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	   874ms  	6.0%      	-9.0%     	0.51      	0.46      	0.48      	0.85      
+---------------- 6/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_006 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    233ms resulting in 57185 candidates.
+Keeping highest candidates... took     11ms resulting in 12401 candidates.
+Counting IDs... took     10ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|*|ID|*|ID) 82896 [8289|8289]
+
+--- 1: Visiting (ID|ID|*|*|*|*|*|ID|*|ID) 82896 [8289|8289]
+Using parallel stream over blocks
+Sorting took      1ms 351 blocks.
+Found 22 possible functions on 2 from 103 random target records.
+Filtered to 21.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|Map|*|*|*|*|ID|*|ID) 85345 [8533|8533]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     11ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|ID|*|*|Map|*|*|ID|*|ID) 85353 [8534|8534]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|*|Map|*|ID|*|ID) 85191 [8518|8518]is better than all 2
+Found 1 possible functions on 6 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+total    311ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|*|*|*|*|FixedValue|ID|*|ID) 82896 [8289|8289]
+
+--- 2: Visiting (ID|ID|*|*|*|*|FixedValue|ID|*|ID) 82896 [8289|8289]
+Using parallel stream over blocks
+Sorting took      1ms 351 blocks.
+Found 22 possible functions on 2 from 103 random target records.
+Filtered to 19.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|Map|*|*|*|FixedValue|ID|*|ID) 85345 [8533|8533]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|Map|*|FixedValue|ID|*|ID) 85353 [8534|8534]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:     11ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|ID|*|*|*|Map|FixedValue|ID|*|ID) 85191 [8518|8518]is better than all 2
+Found 11 possible functions on 8 from 103 random target records.
+Filtered to 11.
+induce:     11ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|ID|*|*|*|*|FixedValue|ID|Map|ID) 84061 [8405|8405]is better than all 2
+Found 11 possible functions on 8 from 103 random target records.
+Filtered to 11.
+induce:     11ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     18ms
+(ID|ID|*|*|*|*|FixedValue|ID|Map|ID) 84061 [8405|8405]is better than all 2
+total    487ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|FixedValue|ID|â™¦|ID) 82891 [8289|8289]
+
+--- 3: Visiting (ID|ID|â™¦|*|â™¦|â™¦|FixedValue|ID|â™¦|ID) 82891 [8289|8289]
+Sorting took      0ms 351 blocks.
+Found 12 possible functions on 3 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|â™¦|Map|â™¦|â™¦|FixedValue|ID|â™¦|ID) 85409 [8540|8540]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|FixedValue|ID|â™¦|ID) 82891 [8289|8289]
+total    274ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|FixedValue|ID|Map|ID) 86363 [8633|8633]
+
+--- 4: Visiting (ID|ID|Map|Map|Map|Map|FixedValue|ID|Map|ID) 86363 [8633|8633]
+End State found.
+
+Total Runtime:   1402ms
+
+Test Case: 
+(MapTransformation:		[4317]. Unchanged: [3]
+IDTransformation:		x -> x
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+RearMaskTransformation:		y.[3] -> y"XXX"
+IDTransformation:		x -> x
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+IDTransformation:		x -> x)
+Score: 51850 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[2]. Unchanged: [2]
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+MapTransformation:		[2]
+IDTransformation:		x -> x)
+Score: 86363 [8633|8633]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1402ms  	66.6%     	-99.8%    	0.85      	0.05      	0.09      	0.69      
+---------------- 7/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_007 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    229ms resulting in 58752 candidates.
+Keeping highest candidates... took     10ms resulting in 12113 candidates.
+Counting IDs... took      9ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|ID|*|*|*) 72797 [7279|7279]
+
+--- 1: Visiting (ID|ID|*|*|*|*|ID|*|*|*) 72797 [7279|7279]
+Using parallel stream over blocks
+Sorting took      3ms 1361 blocks.
+Found 20 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|Map|*|*|*|ID|*|*|*) 83226 [8321|8321]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      9ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|Map|*|ID|*|*|*) 82544 [8253|8253]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|Map|ID|*|*|*) 81522 [8151|8151]is better than all 2
+Found 1 possible functions on 7 from 103 random target records.
+Filtered to 1.
+induce:     11ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+total    287ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|*|*|*|*|ID|FixedValue|*|*) 72797 [7279|7279]
+
+--- 2: Visiting (ID|ID|*|*|*|*|ID|FixedValue|*|*) 72797 [7279|7279]
+Using parallel stream over blocks
+Sorting took      7ms 1361 blocks.
+Found 20 possible functions on 2 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|Map|*|*|*|ID|FixedValue|*|*) 83226 [8321|8321]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|Map|*|ID|FixedValue|*|*) 82544 [8253|8253]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|*|Map|ID|FixedValue|*|*) 81522 [8151|8151]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|ID|FixedValue|Map|*) 81592 [8158|8158]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|ID|FixedValue|*|Map) 81354 [8134|8134]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 6.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|ID|FixedValue|*|Map) 81354 [8134|8134]is better than all 2
+total    510ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|ID|FixedValue|â™¦|â™¦) 72791 [7279|7279]
+
+--- 3: Visiting (ID|ID|â™¦|*|â™¦|â™¦|ID|FixedValue|â™¦|â™¦) 72791 [7279|7279]
+Sorting took      0ms 1361 blocks.
+Found 1 possible functions on 3 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+Finalizing (ID|ID|â™¦|FixedValue|â™¦|â™¦|ID|FixedValue|â™¦|â™¦) 72792 [7279|7279]
+Using parallel stream over blocks
+total    232ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|FixedValue|Map|Map|ID|FixedValue|Map|Map) 86310 [8627|8627]
+
+--- 4: Visiting (ID|ID|Map|FixedValue|Map|Map|ID|FixedValue|Map|Map) 86310 [8627|8627]
+End State found.
+
+Total Runtime:   1347ms
+
+Test Case: 
+(MapTransformation:		[4318]. Unchanged: [2]
+IDTransformation:		x -> x
+MapTransformation:		[5]
+FixedValueTransformation:		x -> "FIXED"
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+FixedValueTransformation:		x -> "FIXED"
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 51833 [4318|4318]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[5]
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+IDTransformation:		x -> x
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[3]
+MapTransformation:		[4])
+Score: 86310 [8627|8627]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1347ms  	66.5%     	-99.7%    	0.99      	0.05      	0.09      	0.53      
+---------------- 8/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_008 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    210ms resulting in 8640 candidates.
+Keeping highest candidates... took      0ms resulting in 8640 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|*|*|*|ID|*) 58058 [5805|5805]
+
+--- 1: Visiting (ID|*|*|*|*|*|*|*|ID|*) 58058 [5805|5805]
+Using parallel stream over blocks
+Sorting took      6ms 2835 blocks.
+Found 10 possible functions on 1 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|Map|*|*|*|*|*|*|ID|*) 76553 [7654|7654]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 17.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|Map|*|*|*|*|ID|*) 78855 [7884|7884]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|Map|*|*|*|ID|*) 78855 [7884|7884]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|*|*|*|*|Map|*|*|ID|*) 76593 [7658|7658]is better than all 2
+Found 1 possible functions on 6 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+total    367ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|*|FixedValue|*|ID|*) 58058 [5805|5805]
+
+--- 2: Visiting (ID|*|*|*|*|*|FixedValue|*|ID|*) 58058 [5805|5805]
+Using parallel stream over blocks
+Sorting took      5ms 2835 blocks.
+Found 10 possible functions on 1 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|*|*|*|FixedValue|*|ID|*) 76553 [7654|7654]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|*|FixedValue|*|ID|*) 78855 [7884|7884]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|*|FixedValue|*|ID|*) 78855 [7884|7884]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|Map|FixedValue|*|ID|*) 76593 [7658|7658]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|FixedValue|Map|ID|*) 76423 [7641|7641]is better than all 2
+Found 13 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|*|FixedValue|*|ID|Map) 67355 [6734|6734]is better than all 2
+Found 10 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|FixedValue|*|ID|Map) 67355 [6734|6734]is better than all 2
+total    595ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 58051 [5805|5805]
+
+--- 3: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 58051 [5805|5805]
+Sorting took      0ms 2835 blocks.
+Found 22 possible functions on 2 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 80081 [8007|8007]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 58051 [5805|5805]
+total    325ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|FixedValue|Map|ID|Map) 86357 [8631|8631]
+
+--- 4: Visiting (ID|Map|Map|Map|Map|Map|FixedValue|Map|ID|Map) 86357 [8631|8631]
+End State found.
+
+Total Runtime:   1549ms
+
+Test Case: 
+(MapTransformation:		[4319]. Unchanged: [1]
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED"
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x
+MapTransformation:		[5])
+Score: 51860 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[5]
+MapTransformation:		[4]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[3])
+Score: 86357 [8631|8631]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1549ms  	66.5%     	-99.8%    	0.82      	0.05      	0.09      	0.48      
+---------------- 9/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_009 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    233ms resulting in 52094 candidates.
+Keeping highest candidates... took     11ms resulting in 9389 candidates.
+Counting IDs... took      9ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|*|*|*|*) 57098 [5709|5709]
+
+--- 1: Visiting (ID|ID|*|*|*|*|*|*|*|*) 57098 [5709|5709]
+Using parallel stream over blocks
+Sorting took      6ms 2931 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|Map|*|*|*|*|*|*|*) 80147 [8013|8013]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:     13ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     21ms
+(ID|ID|*|*|Map|*|*|*|*|*) 78435 [7842|7842]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|*|Map|*|*|*|*) 76123 [7611|7611]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:      9ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|Map|*|*|*) 71521 [7151|7151]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+(ID|ID|*|*|*|*|*|Map|*|*) 76293 [7628|7628]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     16ms
+(ID|ID|*|*|*|*|*|*|Map|*) 76223 [7621|7621]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|*|*|*|Map) 75925 [7591|7591]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|*|*|*|*|*|*|*|Map) 75925 [7591|7591]is better than all 2
+total    670ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 57090 [5709|5709]
+
+--- 2: Visiting (ID|ID|â™¦|*|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 57090 [5709|5709]
+Sorting took      0ms 2931 blocks.
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      9ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|ID|â™¦|Map|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 78168 [7816|7816]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦|â™¦) 57090 [5709|5709]
+total    373ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|Map|Map|Map|Map) 86398 [8635|8635]
+
+--- 3: Visiting (ID|ID|Map|Map|Map|Map|Map|Map|Map|Map) 86398 [8635|8635]
+End State found.
+
+Total Runtime:   1362ms
+
+Test Case: 
+(MapTransformation:		[4319]. Unchanged: [1]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]
+RearCharTrimTransformation:		xxx[t]* -> xxx
+RearCharTrimTransformation:		xxx[b]* -> xxx
+MapTransformation:		[3]
+IDTransformation:		x -> x)
+Score: 51854 [4320|4320]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[4]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[3]
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[3]
+MapTransformation:		[2]
+MapTransformation:		[2]. Unchanged: [1])
+Score: 86398 [8635|8635]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1362ms  	66.6%     	-99.9%    	0.45      	0.01      	0.03      	0.45      
+---------------- 10/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N50_T50_010 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (8640 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    208ms resulting in 55416 candidates.
+Keeping highest candidates... took      7ms resulting in 18087 candidates.
+Counting IDs... took      9ms.
+
+Queue (1):
+(*|*|*|ID|*|*|*|*|*|ID) 1238 [123|123]
+
+--- 1: Visiting (*|*|*|ID|*|*|*|*|*|ID) 1238 [123|123]
+Sorting took     27ms 17 blocks.
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 15 blocks.
+Evaluation done by sampling 15 different blocks.
+best:     21ms
+(*|*|*|ID|*|*|Map|*|*|ID) 4671 [466|466]is better than all 2
+Found 9 possible functions on 1 from 103 random target records.
+Filtered to 9.
+induce:     13ms
+Finding best on [1]
+138 random source records
+resulting in 13 blocks.
+Evaluation done by sampling 13 different blocks.
+best:     26ms
+total    100ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|RearMask|*|ID|*|*|*|*|*|ID) 2508 [250|250]
+
+--- 2: Visiting (*|RearMask|*|ID|*|*|*|*|*|ID) 2508 [250|250]
+Sorting took     32ms 45 blocks.
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 36 blocks.
+Evaluation done by sampling 36 different blocks.
+best:     21ms
+(*|RearMask|*|ID|*|*|Map|*|*|ID) 3161 [315|315]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [5]
+138 random source records
+resulting in 38 blocks.
+Evaluation done by sampling 38 different blocks.
+best:     24ms
+total    108ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|RearMask|*|ID|*|RearCharTrim|*|*|*|ID) 4008 [400|400]
+
+--- 3: Visiting (*|RearMask|*|ID|*|RearCharTrim|*|*|*|ID) 4008 [400|400]
+Using parallel stream over blocks
+Sorting took      5ms 125 blocks.
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 84 blocks.
+Evaluation done by sampling 84 different blocks.
+best:     18ms
+(*|RearMask|*|ID|*|RearCharTrim|Map|*|*|ID) 5431 [542|542]is better than all 2
+Found 9 possible functions on 7 from 103 random target records.
+Filtered to 9.
+induce:     12ms
+Finding best on [7]
+138 random source records
+resulting in 78 blocks.
+Evaluation done by sampling 78 different blocks.
+best:     23ms
+total     84ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|RearMask|*|ID|*|RearCharTrim|*|RearMask|*|ID) 6738 [673|673]
+
+--- 4: Visiting (*|RearMask|*|ID|*|RearCharTrim|*|RearMask|*|ID) 6738 [673|673]
+Using parallel stream over blocks
+Sorting took      5ms 353 blocks.
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 115 blocks.
+Evaluation done by sampling 115 different blocks.
+best:     12ms
+total     41ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|RearMask|*|ID|*|RearCharTrim|FixedValue|RearMask|*|ID) 43198 [4319|4319]
+
+--- 5: Visiting (*|RearMask|*|ID|*|RearCharTrim|FixedValue|RearMask|*|ID) 43198 [4319|4319]
+Using parallel stream over blocks
+Sorting took      4ms 346 blocks.
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:      6ms
+Finding best on [8]
+138 random source records
+resulting in 114 blocks.
+Evaluation done by sampling 114 different blocks.
+best:     12ms
+total     48ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(*|RearMask|*|ID|*|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 43338 [4333|4333]
+
+--- 6: Visiting (*|RearMask|*|ID|*|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 43338 [4333|4333]
+Using parallel stream over blocks
+Sorting took      5ms 544 blocks.
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 19.
+induce:     13ms
+Finding best on [4]
+138 random source records
+resulting in 124 blocks.
+Evaluation done by sampling 124 different blocks.
+best:     20ms
+(*|RearMask|*|ID|Map|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 44505 [4449|4449]is better than all 2
+Found 2599 possible functions on 0 from 103 random target records.
+Filtered to 0.
+induce:     53ms
+Finding best on []
+138 random source records
+resulting in 123 blocks.
+Evaluation done by sampling 123 different blocks.
+best:     55ms
+Found 2429 possible functions on 0 from 103 random target records.
+Filtered to 0.
+induce:     49ms
+Finding best on []
+138 random source records
+resulting in 118 blocks.
+Evaluation done by sampling 118 different blocks.
+best:     51ms
+total    148ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(â™¦|RearMask|*|ID|â™¦|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 43335 [4333|4333]
+
+--- 7: Visiting (â™¦|RearMask|*|ID|â™¦|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 43335 [4333|4333]
+Sorting took      0ms 544 blocks.
+Found 22 possible functions on 2 from 103 random target records.
+Filtered to 22.
+induce:     15ms
+Finding best on [2]
+138 random source records
+resulting in 119 blocks.
+Evaluation done by sampling 119 different blocks.
+best:     22ms
+Finalizing (â™¦|RearMask|Prefix|ID|â™¦|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 68616 [6861|6861]
+Using parallel stream over blocks
+total    123ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(Map|RearMask|Prefix|ID|Map|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 63238 [5743|5743]
+
+--- 8: Visiting (Map|RearMask|Prefix|ID|Map|RearCharTrim|FixedValue|RearMask|CapsLock|ID) 63238 [5743|5743]
+End State found.
+
+Total Runtime:    925ms
+
+Test Case: 
+(MapTransformation:		[4319]. Unchanged: [1]
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+MapTransformation:		[4]
+RearCharTrimTransformation:		xxx[v]* -> xxx
+MapTransformation:		[2]
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x)
+Score: 51857 [4320|4320]
+
+Result: 
+(MapTransformation:		[2896]. Unchanged: [1]
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+PrefixTransformation:		"xxxx" -> "PREFIXxxxx"
+IDTransformation:		x -> x
+MapTransformation:		[4]
+RearCharTrimTransformation:		xxx[v]* -> xxx
+FixedValueTransformation:		x -> "inconv_random0"
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x)
+Score: 63238 [5743|5743]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	   925ms  	21.9%     	-32.9%    	0.50      	0.34      	0.40      	0.86      
+--------- N70_T70
+---------------- 1/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_001 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    204ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|*|*|*|*|*|*|*|*|*) 9 [0|0]
+
+--- 1: Visiting (ID|*|*|*|*|*|*|*|*|*) 9 [0|0]
+Using parallel stream over blocks
+Sorting took     16ms 7624 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|*|*|*|*|*|*|*) 50244 [5023|5023]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 17.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|*|*|*|*|*) 56246 [5623|5623]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|*|*|*|*|*) 56276 [5626|5626]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     11ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|Map|*|*|*|*) 50434 [5042|5042]is better than all 2
+Found 1 possible functions on 6 from 103 random target records.
+Filtered to 1.
+induce:     11ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+total    318ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|*|FixedValue|*|*|*) 9 [0|0]
+
+--- 2: Visiting (ID|*|*|*|*|*|FixedValue|*|*|*) 9 [0|0]
+Using parallel stream over blocks
+Sorting took     16ms 7624 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|*|*|*|FixedValue|*|*|*) 50244 [5023|5023]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 17.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|Map|*|*|FixedValue|*|*|*) 56246 [5623|5623]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|Map|*|FixedValue|*|*|*) 56276 [5626|5626]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|Map|FixedValue|*|*|*) 50434 [5042|5042]is better than all 2
+Found 14 possible functions on 7 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+total    349ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|*|FixedValue|FrontMask|*|*) 50239 [5023|5023]
+
+--- 3: Visiting (ID|*|*|*|*|*|FixedValue|FrontMask|*|*) 50239 [5023|5023]
+Using parallel stream over blocks
+Sorting took      4ms 2601 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|*|*|*|FixedValue|FrontMask|*|*) 67154 [6714|6714]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 12.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|Map|*|*|FixedValue|FrontMask|*|*) 69296 [6928|6928]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|*|FixedValue|FrontMask|*|*) 69426 [6941|6941]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|Map|FixedValue|FrontMask|*|*) 67274 [6726|6726]is better than all 2
+Found 1 possible functions on 8 from 103 random target records.
+Filtered to 1.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    342ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|*|FixedValue|FrontMask|FixedValue|*) 50239 [5023|5023]
+
+--- 4: Visiting (ID|*|*|*|*|*|FixedValue|FrontMask|FixedValue|*) 50239 [5023|5023]
+Using parallel stream over blocks
+Sorting took      4ms 2601 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 11.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|*|*|*|FixedValue|FrontMask|FixedValue|*) 67154 [6714|6714]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|*|FixedValue|FrontMask|FixedValue|*) 69296 [6928|6928]is better than all 2
+Found 19 possible functions on 4 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|*|FixedValue|FrontMask|FixedValue|*) 69426 [6941|6941]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|Map|FixedValue|FrontMask|FixedValue|*) 67274 [6726|6726]is better than all 2
+Found 16 possible functions on 9 from 103 random target records.
+Filtered to 11.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|FixedValue|FrontMask|FixedValue|Map) 67398 [6738|6738]is better than all 2
+Found 16 possible functions on 9 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|FixedValue|FrontMask|FixedValue|Map) 67398 [6738|6738]is better than all 2
+total    451ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|FrontMask|FixedValue|â™¦) 50233 [5023|5023]
+
+--- 5: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|FrontMask|FixedValue|â™¦) 50233 [5023|5023]
+Sorting took      0ms 2601 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|FixedValue|FrontMask|FixedValue|â™¦) 70583 [7057|7057]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|FixedValue|FrontMask|FixedValue|â™¦) 50233 [5023|5023]
+total    245ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|FixedValue|FrontMask|FixedValue|Map) 76187 [7614|7614]
+
+--- 6: Visiting (ID|Map|Map|Map|Map|Map|FixedValue|FrontMask|FixedValue|Map) 76187 [7614|7614]
+End State found.
+
+Total Runtime:   1961ms
+
+Test Case: 
+(MapTransformation:		[2286]. Unchanged: [2]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[e]* -> xxx
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+FixedValueTransformation:		x -> "FIXED"
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[5])
+Score: 57947 [5335|5335]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[5]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[4]
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED"
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[3])
+Score: 76187 [7614|7614]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1961ms  	31.5%     	-99.6%    	0.79      	0.12      	0.20      	0.58      
+---------------- 2/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_002 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (3 blocks )
+Matching took    209ms resulting in 45620 candidates.
+Keeping highest candidates... took      6ms resulting in 8268 candidates.
+Counting IDs... took      8ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|ID|*) 63247 [6324|6324]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|ID|*) 63247 [6324|6324]
+Using parallel stream over blocks
+Sorting took      2ms 1300 blocks.
+Found 8 possible functions on 1 from 103 random target records.
+Filtered to 8.
+induce:      5ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:      9ms
+(ID|Map|*|*|*|*|ID|*|ID|*) 71742 [7173|7173]is better than all 2
+Found 15 possible functions on 3 from 103 random target records.
+Filtered to 13.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|Map|*|*|ID|*|ID|*) 72364 [7235|7235]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|Map|*|ID|*|ID|*) 72744 [7273|7273]is better than all 2
+Found 11 possible functions on 5 from 103 random target records.
+Filtered to 11.
+induce:      6ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|*|Map|ID|*|ID|*) 71692 [7168|7168]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      6ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|*|*|ID|Map|ID|*) 71442 [7143|7143]is better than all 2
+Found 11 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      5ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|*|*|*|*|*|ID|*|ID|Map) 67454 [6744|6744]is better than all 2
+Found 11 possible functions on 9 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|ID|*|ID|Map) 67454 [6744|6744]is better than all 2
+total    503ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|ID|â™¦) 63240 [6324|6324]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|ID|â™¦) 63240 [6324|6324]
+Sorting took      0ms 1300 blocks.
+Found 27 possible functions on 2 from 103 random target records.
+Filtered to 18.
+induce:      7ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|ID|â™¦|ID|â™¦) 73320 [7331|7331]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|ID|â™¦|ID|â™¦) 63240 [6324|6324]
+total    307ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|ID|Map|ID|Map) 76234 [7619|7619]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|Map|ID|Map|ID|Map) 76234 [7619|7619]
+End State found.
+
+Total Runtime:   1085ms
+
+Test Case: 
+(MapTransformation:		[2288]
+IDTransformation:		x -> x
+FrontCharTrimTransformation:		[p]*xxx -> xxx
+RearCharTrimTransformation:		xxx[e]* -> xxx
+IDTransformation:		x -> x
+FrontCharTrimTransformation:		[l]*xxx -> xxx
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[y]* -> xxx)
+Score: 57940 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]. Unchanged: [1]
+IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [1]
+IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [1])
+Score: 76234 [7619|7619]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1085ms  	31.6%     	-99.8%    	0.31      	0.04      	0.07      	0.51      
+---------------- 3/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_003 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (3 blocks )
+Matching took    191ms resulting in 46571 candidates.
+Keeping highest candidates... took      6ms resulting in 10305 candidates.
+Counting IDs... took      6ms.
+
+Queue (1):
+(ID|*|*|ID|*|*|*|*|*|*) 57728 [5772|5772]
+
+--- 1: Visiting (ID|*|*|ID|*|*|*|*|*|*) 57728 [5772|5772]
+Using parallel stream over blocks
+Sorting took      4ms 1852 blocks.
+Found 11 possible functions on 1 from 103 random target records.
+Filtered to 11.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|ID|*|*|*|*|*|*) 69713 [6970|6970]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|ID|Map|*|*|*|*|*) 71315 [7130|7130]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|ID|*|Map|*|*|*|*) 69763 [6975|6975]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+total    297ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|ID|*|*|FrontCharTrim|*|*|*) 66958 [6695|6695]
+
+--- 2: Visiting (ID|*|*|ID|*|*|FrontCharTrim|*|*|*) 66958 [6695|6695]
+Using parallel stream over blocks
+Sorting took      1ms 929 blocks.
+Found 11 possible functions on 1 from 103 random target records.
+Filtered to 11.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|ID|*|*|FrontCharTrim|*|*|*) 73013 [7300|7300]is better than all 2
+Found 18 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|ID|Map|*|FrontCharTrim|*|*|*) 73765 [7375|7375]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|ID|*|Map|FrontCharTrim|*|*|*) 72863 [7285|7285]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|ID|*|*|FrontCharTrim|Map|*|*) 72893 [7288|7288]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|ID|*|*|FrontCharTrim|*|Map|*) 73013 [7300|7300]is better than all 2
+Found 10 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|ID|*|*|FrontCharTrim|*|*|Map) 72977 [7296|7296]is better than all 2
+Found 14 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|ID|*|*|FrontCharTrim|*|*|Map) 72977 [7296|7296]is better than all 2
+total    511ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|ID|â™¦|â™¦|FrontCharTrim|â™¦|â™¦|â™¦) 66951 [6695|6695]
+
+--- 3: Visiting (ID|â™¦|*|ID|â™¦|â™¦|FrontCharTrim|â™¦|â™¦|â™¦) 66951 [6695|6695]
+Sorting took      0ms 929 blocks.
+Found 20 possible functions on 2 from 103 random target records.
+Filtered to 16.
+induce:      9ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|â™¦|Map|ID|â™¦|â™¦|FrontCharTrim|â™¦|â™¦|â™¦) 73991 [7398|7398]is better than all 2
+Finalizing (ID|â™¦|â™¦|ID|â™¦|â™¦|FrontCharTrim|â™¦|â™¦|â™¦) 66951 [6695|6695]
+total    281ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|ID|Map|Map|FrontCharTrim|Map|Map|Map) 76219 [7617|7617]
+
+--- 4: Visiting (ID|Map|Map|ID|Map|Map|FrontCharTrim|Map|Map|Map) 76219 [7617|7617]
+End State found.
+
+Total Runtime:   1349ms
+
+Test Case: 
+(MapTransformation:		[2287]. Unchanged: [1]
+FrontCharTrimTransformation:		[p]*xxx -> xxx
+MapTransformation:		[5]
+IDTransformation:		x -> x
+CapsLockTransformation:		string ->  STRING
+MapTransformation:		[3]
+FrontCharTrimTransformation:		[i]*xxx -> xxx
+CapsLockTransformation:		string ->  STRING
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+RearCharTrimTransformation:		xxx[y]* -> xxx)
+Score: 57958 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[4]
+IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [2]
+MapTransformation:		[3]
+FrontCharTrimTransformation:		[i]*xxx -> xxx
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[2]. Unchanged: [2])
+Score: 76219 [7617|7617]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1349ms  	31.5%     	-99.7%    	0.27      	0.08      	0.13      	0.54      
+---------------- 4/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_004 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    195ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      6ms.
+
+Queue (1):
+(ID|*|*|*|*|*|*|*|*|*) 9 [0|0]
+
+--- 1: Visiting (ID|*|*|*|*|*|*|*|*|*) 9 [0|0]
+Using parallel stream over blocks
+Sorting took     14ms 7624 blocks.
+Found 3 possible functions on 1 from 103 random target records.
+Filtered to 3.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total     47ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|*|*|*|*) 9 [0|0]
+
+--- 2: Visiting (ID|FixedValue|*|*|*|*|*|*|*|*) 9 [0|0]
+Using parallel stream over blocks
+Sorting took     13ms 7624 blocks.
+Found 16 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|Map|*|*|*|*|*|*|*) 59698 [5968|5968]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|FixedValue|*|*|Map|*|*|*|*|*) 56256 [5624|5624]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|FixedValue|*|*|*|Map|*|*|*|*) 50244 [5023|5023]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:     10ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|*|*|*|*|Map|*|*|*) 37902 [3789|3789]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    339ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|*|CapsLock|*|*) 49989 [4998|4998]
+
+--- 3: Visiting (ID|FixedValue|*|*|*|*|*|CapsLock|*|*) 49989 [4998|4998]
+Using parallel stream over blocks
+Sorting took      4ms 2626 blocks.
+Found 16 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|Map|*|*|*|*|CapsLock|*|*) 70258 [7024|7024]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|Map|*|*|CapsLock|*|*) 69256 [6924|6924]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|FixedValue|*|*|*|Map|*|CapsLock|*|*) 67124 [6711|6711]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|Map|CapsLock|*|*) 62902 [6289|6289]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|FixedValue|*|*|*|*|*|CapsLock|Map|*) 66834 [6682|6682]is better than all 2
+Found 1 possible functions on 9 from 103 random target records.
+Filtered to 1.
+induce:     13ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     17ms
+total    453ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|*|*|*|*|*|CapsLock|*|FixedValue) 49989 [4998|4998]
+
+--- 4: Visiting (ID|FixedValue|*|*|*|*|*|CapsLock|*|FixedValue) 49989 [4998|4998]
+Using parallel stream over blocks
+Sorting took      4ms 2626 blocks.
+Found 16 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|Map|*|*|*|*|CapsLock|*|FixedValue) 70258 [7024|7024]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|FixedValue|*|*|Map|*|*|CapsLock|*|FixedValue) 69256 [6924|6924]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|Map|*|CapsLock|*|FixedValue) 67124 [6711|6711]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|Map|CapsLock|*|FixedValue) 62902 [6289|6289]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|*|CapsLock|Map|FixedValue) 66834 [6682|6682]is better than all 2
+Found 12 possible functions on 8 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|FixedValue|*|*|*|*|*|CapsLock|Map|FixedValue) 66834 [6682|6682]is better than all 2
+total    434ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|â™¦|*|â™¦|â™¦|â™¦|CapsLock|â™¦|FixedValue) 49983 [4998|4998]
+
+--- 5: Visiting (ID|FixedValue|â™¦|*|â™¦|â™¦|â™¦|CapsLock|â™¦|FixedValue) 49983 [4998|4998]
+Sorting took      0ms 2626 blocks.
+Found 17 possible functions on 3 from 103 random target records.
+Filtered to 15.
+induce:     10ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|FixedValue|â™¦|Map|â™¦|â™¦|â™¦|CapsLock|â™¦|FixedValue) 69071 [6906|6906]is better than all 2
+Finalizing (ID|FixedValue|â™¦|â™¦|â™¦|â™¦|â™¦|CapsLock|â™¦|FixedValue) 49983 [4998|4998]
+total    250ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|FixedValue|Map|Map|Map|Map|Map|CapsLock|Map|FixedValue) 76163 [7612|7612]
+
+--- 6: Visiting (ID|FixedValue|Map|Map|Map|Map|Map|CapsLock|Map|FixedValue) 76163 [7612|7612]
+End State found.
+
+Total Runtime:   1764ms
+
+Test Case: 
+(MapTransformation:		[2285]. Unchanged: [3]
+FixedValueTransformation:		x -> "FIXED"
+CapsLockTransformation:		string ->  STRING
+FrontMaskTransformation:		.[3]y -> "XXX"y
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[v]* -> xxx
+FrontMaskTransformation:		.[5]y -> "XXXXX"y
+CapsLockTransformation:		string ->  STRING
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED")
+Score: 57929 [5334|5334]
+
+Result: 
+(IDTransformation:		x -> x
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[5]
+MapTransformation:		[3]
+MapTransformation:		[4]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[2]
+CapsLockTransformation:		string ->  STRING
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "FIXED")
+Score: 76163 [7612|7612]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1764ms  	31.5%     	-99.5%    	0.87      	0.17      	0.29      	0.44      
+---------------- 5/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_005 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (1 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (3 blocks )
+Matching took    219ms resulting in 43812 candidates.
+Keeping highest candidates... took     12ms resulting in 8344 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|ID|*|*|*|*|*|*|*|*) 50558 [5055|5055]
+
+--- 1: Visiting (ID|ID|*|*|*|*|*|*|*|*) 50558 [5055|5055]
+Using parallel stream over blocks
+Sorting took      5ms 2569 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|Map|*|*|*|*|*|*|*) 70527 [7051|7051]is better than all 2
+Found 20 possible functions on 4 from 103 random target records.
+Filtered to 19.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|Map|*|*|*|*|*) 69305 [6929|6929]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|Map|*|*|*|*) 67133 [6712|6712]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:      9ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|Map|*|*|*) 63361 [6335|6335]is better than all 2
+Found 1 possible functions on 7 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    323ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|*|*|*|*|*|FixedValue|*|*) 50558 [5055|5055]
+
+--- 2: Visiting (ID|ID|*|*|*|*|*|FixedValue|*|*) 50558 [5055|5055]
+Using parallel stream over blocks
+Sorting took      4ms 2569 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 15.
+induce:      7ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|ID|Map|*|*|*|*|FixedValue|*|*) 70527 [7051|7051]is better than all 2
+Found 20 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|Map|*|*|FixedValue|*|*) 69305 [6929|6929]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|Map|*|FixedValue|*|*) 67133 [6712|6712]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:      8ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|ID|*|*|*|*|Map|FixedValue|*|*) 63361 [6335|6335]is better than all 2
+Found 9 possible functions on 8 from 103 random target records.
+Filtered to 9.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|ID|*|*|*|*|*|FixedValue|Map|*) 67383 [6737|6737]is better than all 2
+Found 15 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|*|FixedValue|*|Map) 66995 [6698|6698]is better than all 2
+Found 14 possible functions on 9 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|ID|*|*|*|*|*|FixedValue|*|Map) 66995 [6698|6698]is better than all 2
+total    506ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|â™¦) 50551 [5055|5055]
+
+--- 3: Visiting (ID|ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|â™¦) 50551 [5055|5055]
+Sorting took      0ms 2569 blocks.
+Found 21 possible functions on 3 from 103 random target records.
+Filtered to 20.
+induce:     12ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     20ms
+(ID|ID|â™¦|Map|â™¦|â™¦|â™¦|FixedValue|â™¦|â™¦) 69179 [6917|6917]is better than all 2
+Finalizing (ID|ID|â™¦|â™¦|â™¦|â™¦|â™¦|FixedValue|â™¦|â™¦) 50551 [5055|5055]
+total    289ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|ID|Map|Map|Map|Map|Map|FixedValue|Map|Map) 76207 [7616|7616]
+
+--- 4: Visiting (ID|ID|Map|Map|Map|Map|Map|FixedValue|Map|Map) 76207 [7616|7616]
+End State found.
+
+Total Runtime:   1407ms
+
+Test Case: 
+(MapTransformation:		[2288]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[r]* -> xxx
+FrontCharTrimTransformation:		[m]*xxx -> xxx
+CapsLockTransformation:		string ->  STRING
+RearCharTrimTransformation:		xxx[v]* -> xxx
+FixedValueTransformation:		x -> "FIXED"
+RearMaskTransformation:		y.[4] -> y"XXXX"
+RearCharTrimTransformation:		xxx[r]* -> xxx)
+Score: 57933 [5335|5335]
+
+Result: 
+(IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]. Unchanged: [2]
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[2]
+FixedValueTransformation:		x -> "FIXED"
+MapTransformation:		[3]
+MapTransformation:		[4])
+Score: 76207 [7616|7616]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1407ms  	31.5%     	-99.7%    	0.90      	0.22      	0.35      	0.38      
+---------------- 6/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_006 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    178ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      4ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|*|*) 37818 [3781|3781]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|*|*) 37818 [3781|3781]
+Using parallel stream over blocks
+Sorting took      7ms 3843 blocks.
+Found 11 possible functions on 1 from 103 random target records.
+Filtered to 11.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|*|*|*|ID|*|*|*) 63053 [6304|6304]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 18.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|*|ID|*|*|*) 65985 [6597|6597]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|Map|*|ID|*|*|*) 66205 [6619|6619]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|Map|ID|*|*|*) 62653 [6264|6264]is better than all 2
+Found 12 possible functions on 7 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|*|*|ID|Map|*|*) 62723 [6271|6271]is better than all 2
+Found 9 possible functions on 8 from 103 random target records.
+Filtered to 9.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|*|ID|*|Map|*) 63143 [6313|6313]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 9.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63327 [6331|6331]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 9.
+induce:      8ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63327 [6331|6331]is better than all 2
+total    582ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37810 [3781|3781]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37810 [3781|3781]
+Sorting took      0ms 3843 blocks.
+Found 16 possible functions on 2 from 103 random target records.
+Filtered to 16.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 67970 [6796|6796]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37810 [3781|3781]
+total    321ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76230 [7618|7618]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76230 [7618|7618]
+End State found.
+
+Total Runtime:   1121ms
+
+Test Case: 
+(MapTransformation:		[2286]. Unchanged: [2]
+FrontCharTrimTransformation:		[u]*xxx -> xxx
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+FrontCharTrimTransformation:		[c]*xxx -> xxx
+IDTransformation:		x -> x
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[3]
+RearMaskTransformation:		y.[5] -> y"XXXXX"
+RearMaskTransformation:		y.[5] -> y"XXXXX")
+Score: 57953 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[2]
+MapTransformation:		[3])
+Score: 76230 [7618|7618]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1121ms  	31.5%     	-99.7%    	0.31      	0.10      	0.16      	0.59      
+---------------- 7/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_007 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (5 blocks )
+Matching took    205ms resulting in 46227 candidates.
+Keeping highest candidates... took      6ms resulting in 8555 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|*|*|*|ID|*) 50368 [5036|5036]
+
+--- 1: Visiting (ID|*|*|*|*|*|*|*|ID|*) 50368 [5036|5036]
+Using parallel stream over blocks
+Sorting took      4ms 2588 blocks.
+Found 8 possible functions on 1 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|Map|*|*|*|*|*|*|ID|*) 67253 [6724|6724]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 11.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|Map|*|*|*|*|ID|*) 69215 [6920|6920]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|*|*|*|ID|*) 69385 [6937|6937]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|Map|*|*|ID|*) 67203 [6719|6719]is better than all 2
+Found 8 possible functions on 6 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    374ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|*|FixedValue|*|ID|*) 63148 [6314|6314]
+
+--- 2: Visiting (ID|*|*|*|*|*|FixedValue|*|ID|*) 63148 [6314|6314]
+Using parallel stream over blocks
+Sorting took      2ms 1310 blocks.
+Found 8 possible functions on 1 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|Map|*|*|*|*|FixedValue|*|ID|*) 71663 [7165|7165]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 12.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|Map|*|*|FixedValue|*|ID|*) 72575 [7256|7256]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|Map|*|FixedValue|*|ID|*) 72485 [7247|7247]is better than all 2
+Found 12 possible functions on 5 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|Map|FixedValue|*|ID|*) 71593 [7158|7158]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|FixedValue|Map|ID|*) 71573 [7156|7156]is better than all 2
+Found 9 possible functions on 9 from 103 random target records.
+Filtered to 6.
+induce:      6ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|*|*|*|*|*|FixedValue|*|ID|Map) 67345 [6733|6733]is better than all 2
+Found 9 possible functions on 9 from 103 random target records.
+Filtered to 6.
+induce:      6ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|*|*|*|*|*|FixedValue|*|ID|Map) 67345 [6733|6733]is better than all 2
+total    510ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 63141 [6314|6314]
+
+--- 3: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 63141 [6314|6314]
+Sorting took      0ms 1310 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 73181 [7317|7317]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|FixedValue|â™¦|ID|â™¦) 63141 [6314|6314]
+total    293ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|FixedValue|Map|ID|Map) 76233 [7619|7619]
+
+--- 4: Visiting (ID|Map|Map|Map|Map|Map|FixedValue|Map|ID|Map) 76233 [7619|7619]
+End State found.
+
+Total Runtime:   1454ms
+
+Test Case: 
+(MapTransformation:		[2286]. Unchanged: [2]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[2]
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+IDTransformation:		x -> x)
+Score: 57947 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[3]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[3]. Unchanged: [1]
+MapTransformation:		[3]
+FixedValueTransformation:		x -> "inconv_random0"
+MapTransformation:		[3]
+IDTransformation:		x -> x
+MapTransformation:		[1]. Unchanged: [1])
+Score: 76233 [7619|7619]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1454ms  	31.6%     	-99.8%    	0.24      	0.02      	0.04      	0.48      
+---------------- 8/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_008 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    186ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      6ms.
+
+Queue (1):
+(ID|*|*|*|*|ID|*|*|*|*) 50508 [5050|5050]
+
+--- 1: Visiting (ID|*|*|*|*|ID|*|*|*|*) 50508 [5050|5050]
+Using parallel stream over blocks
+Sorting took     25ms 2574 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|*|*|ID|*|*|*|*) 67423 [6741|6741]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 16.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|Map|*|ID|*|*|*|*) 69435 [6942|6942]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 15.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|Map|ID|*|*|*|*) 69255 [6924|6924]is better than all 2
+Found 7 possible functions on 6 from 103 random target records.
+Filtered to 7.
+induce:      7ms
+Finding best on [6]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+total    307ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|ID|FixedValue|*|*|*) 62738 [6273|6273]
+
+--- 2: Visiting (ID|*|*|*|*|ID|FixedValue|*|*|*) 62738 [6273|6273]
+Using parallel stream over blocks
+Sorting took      3ms 1351 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|Map|*|*|*|ID|FixedValue|*|*|*) 71453 [7144|7144]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|Map|*|ID|FixedValue|*|*|*) 72435 [7242|7242]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|ID|FixedValue|*|*|*) 72505 [7249|7249]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:     10ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|ID|FixedValue|Map|*|*) 71483 [7147|7147]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|ID|FixedValue|*|Map|*) 71493 [7148|7148]is better than all 2
+Found 1 possible functions on 9 from 103 random target records.
+Filtered to 1.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+total    413ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|*|*|*|*|ID|FixedValue|*|*|FixedValue) 62738 [6273|6273]
+
+--- 3: Visiting (ID|*|*|*|*|ID|FixedValue|*|*|FixedValue) 62738 [6273|6273]
+Using parallel stream over blocks
+Sorting took      2ms 1351 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      7ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     10ms
+(ID|Map|*|*|*|ID|FixedValue|*|*|FixedValue) 71453 [7144|7144]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|Map|*|ID|FixedValue|*|*|FixedValue) 72435 [7242|7242]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 17.
+induce:      7ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|Map|ID|FixedValue|*|*|FixedValue) 72505 [7249|7249]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|ID|FixedValue|Map|*|FixedValue) 71483 [7147|7147]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|*|ID|FixedValue|*|Map|FixedValue) 71493 [7148|7148]is better than all 2
+Found 8 possible functions on 8 from 103 random target records.
+Filtered to 8.
+induce:      7ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|ID|FixedValue|*|Map|FixedValue) 71493 [7148|7148]is better than all 2
+total    457ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|ID|FixedValue|â™¦|â™¦|FixedValue) 62732 [6273|6273]
+
+--- 4: Visiting (ID|â™¦|*|â™¦|â™¦|ID|FixedValue|â™¦|â™¦|FixedValue) 62732 [6273|6273]
+Sorting took      0ms 1351 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|â™¦|Map|â™¦|â™¦|ID|FixedValue|â™¦|â™¦|FixedValue) 73192 [7318|7318]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|ID|FixedValue|â™¦|â™¦|FixedValue) 62732 [6273|6273]
+total    255ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|ID|FixedValue|Map|Map|FixedValue) 76230 [7619|7619]
+
+--- 5: Visiting (ID|Map|Map|Map|Map|ID|FixedValue|Map|Map|FixedValue) 76230 [7619|7619]
+End State found.
+
+Total Runtime:   1668ms
+
+Test Case: 
+(MapTransformation:		[2287]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+CapsLockTransformation:		string ->  STRING
+IDTransformation:		x -> x
+FixedValueTransformation:		x -> "FIXED")
+Score: 57945 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[3]
+MapTransformation:		[4]. Unchanged: [1]
+MapTransformation:		[3]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+FixedValueTransformation:		x -> "convenientSUFFIX"
+MapTransformation:		[2]
+MapTransformation:		[1]. Unchanged: [2]
+FixedValueTransformation:		x -> "FIXED")
+Score: 76230 [7619|7619]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1668ms  	31.6%     	-99.8%    	0.26      	0.03      	0.06      	0.50      
+---------------- 9/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_009 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (5 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    200ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      7ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|*|*) 37788 [3778|3778]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|*|*) 37788 [3778|3778]
+Using parallel stream over blocks
+Sorting took      6ms 3846 blocks.
+Found 12 possible functions on 1 from 103 random target records.
+Filtered to 12.
+induce:      8ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|Map|*|*|*|*|ID|*|*|*) 63253 [6324|6324]is better than all 2
+Found 18 possible functions on 3 from 103 random target records.
+Filtered to 17.
+induce:      8ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|Map|*|*|ID|*|*|*) 66105 [6609|6609]is better than all 2
+Found 13 possible functions on 4 from 103 random target records.
+Filtered to 13.
+induce:      8ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|Map|*|ID|*|*|*) 65705 [6569|6569]is better than all 2
+Found 8 possible functions on 5 from 103 random target records.
+Filtered to 8.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|Map|ID|*|*|*) 63123 [6311|6311]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      7ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|ID|Map|*|*) 63013 [6300|6300]is better than all 2
+Found 10 possible functions on 8 from 103 random target records.
+Filtered to 10.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|ID|*|Map|*) 62813 [6280|6280]is better than all 2
+Found 15 possible functions on 9 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63207 [6319|6319]is better than all 2
+Found 15 possible functions on 9 from 103 random target records.
+Filtered to 12.
+induce:      9ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63207 [6319|6319]is better than all 2
+total    585ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37780 [3778|3778]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37780 [3778|3778]
+Sorting took      0ms 3846 blocks.
+Found 24 possible functions on 2 from 103 random target records.
+Filtered to 14.
+induce:      8ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 68020 [6801|6801]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 37780 [3778|3778]
+total    356ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76244 [7621|7621]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76244 [7621|7621]
+End State found.
+
+Total Runtime:   1188ms
+
+Test Case: 
+(MapTransformation:		[2287]. Unchanged: [1]
+MapTransformation:		[3]
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+MapTransformation:		[4])
+Score: 57952 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[1]. Unchanged: [2]
+MapTransformation:		[1]. Unchanged: [1]
+MapTransformation:		[2]
+MapTransformation:		[2]
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[2]
+MapTransformation:		[2])
+Score: 76244 [7621|7621]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1188ms  	31.6%     	-99.9%    	0.27      	0.01      	0.03      	0.42      
+---------------- 10/10
+#################BEST_IDs
+///////////////////// AFFIDAVIT EVALUATION ///////////////////// Run - with BEST_ID_1-att-refinements on NURSERY_N70_T70_010 /////
+Creating Single ID States for Overlap Matching
+Mining Row Overlaps... 
+Blocking with (ID|*|*|*|*|*|*|*|*|*) 0 [0|0] (7624 blocks )
+Blocking with (*|ID|*|*|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|ID|*|*|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|ID|*|*|*|*|*|*) 0 [0|0] (3 blocks )
+Blocking with (*|*|*|*|ID|*|*|*|*|*) 0 [0|0] (4 blocks )
+Blocking with (*|*|*|*|*|ID|*|*|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|ID|*|*|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|ID|*|*) 0 [0|0] (0 blocks )
+Blocking with (*|*|*|*|*|*|*|*|ID|*) 0 [0|0] (2 blocks )
+Blocking with (*|*|*|*|*|*|*|*|*|ID) 0 [0|0] (0 blocks )
+Matching took    177ms resulting in 7624 candidates.
+Keeping highest candidates... took      0ms resulting in 7624 candidates.
+Counting IDs... took      4ms.
+
+Queue (1):
+(ID|*|*|*|*|*|ID|*|*|*) 38818 [3881|3881]
+
+--- 1: Visiting (ID|*|*|*|*|*|ID|*|*|*) 38818 [3881|3881]
+Using parallel stream over blocks
+Sorting took      7ms 3743 blocks.
+Found 8 possible functions on 1 from 103 random target records.
+Filtered to 8.
+induce:      6ms
+Finding best on [1]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     11ms
+(ID|Map|*|*|*|*|ID|*|*|*) 63163 [6315|6315]is better than all 2
+Found 21 possible functions on 3 from 103 random target records.
+Filtered to 16.
+induce:      7ms
+Finding best on [3]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|Map|*|*|ID|*|*|*) 66355 [6634|6634]is better than all 2
+Found 17 possible functions on 4 from 103 random target records.
+Filtered to 16.
+induce:      6ms
+Finding best on [4]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     12ms
+(ID|*|*|*|Map|*|ID|*|*|*) 66435 [6642|6642]is better than all 2
+Found 10 possible functions on 5 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [5]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|Map|ID|*|*|*) 63443 [6343|6343]is better than all 2
+Found 10 possible functions on 7 from 103 random target records.
+Filtered to 10.
+induce:      8ms
+Finding best on [7]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     13ms
+(ID|*|*|*|*|*|ID|Map|*|*) 63493 [6348|6348]is better than all 2
+Found 11 possible functions on 8 from 103 random target records.
+Filtered to 11.
+induce:      9ms
+Finding best on [8]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|ID|*|Map|*) 62843 [6283|6283]is better than all 2
+Found 15 possible functions on 9 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63797 [6378|6378]is better than all 2
+Found 12 possible functions on 9 from 103 random target records.
+Filtered to 12.
+induce:     10ms
+Finding best on [9]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     14ms
+(ID|*|*|*|*|*|ID|*|*|Map) 63797 [6378|6378]is better than all 2
+total    561ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 38810 [3881|3881]
+
+--- 2: Visiting (ID|â™¦|*|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 38810 [3881|3881]
+Sorting took      0ms 3743 blocks.
+Found 26 possible functions on 2 from 103 random target records.
+Filtered to 21.
+induce:     10ms
+Finding best on [2]
+138 random source records
+resulting in 138 blocks.
+Evaluation done by sampling 138 different blocks.
+best:     15ms
+(ID|â™¦|Map|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 68200 [6819|6819]is better than all 2
+Finalizing (ID|â™¦|â™¦|â™¦|â™¦|â™¦|ID|â™¦|â™¦|â™¦) 38810 [3881|3881]
+total    310ms
+Trying to enqueue up to 1 children.
+Queue (1):
+(ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76236 [7619|7619]
+
+--- 3: Visiting (ID|Map|Map|Map|Map|Map|ID|Map|Map|Map) 76236 [7619|7619]
+End State found.
+
+Total Runtime:   1087ms
+
+Test Case: 
+(MapTransformation:		[2287]. Unchanged: [1]
+IDTransformation:		x -> x
+RearCharTrimTransformation:		xxx[l]* -> xxx
+RearCharTrimTransformation:		xxx[r]* -> xxx
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+IDTransformation:		x -> x
+SuffixTransformation:		"xxxx" -> "xxxxSUFFIX"
+FrontCharTrimTransformation:		[r]*xxx -> xxx
+MapTransformation:		[4])
+Score: 57949 [5336|5336]
+
+Result: 
+(IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[4]
+MapTransformation:		[4]
+MapTransformation:		[3]
+MapTransformation:		[2]
+IDTransformation:		x -> x
+MapTransformation:		[2]
+MapTransformation:		[2]. Unchanged: [1]
+MapTransformation:		[3])
+Score: 76236 [7619|7619]
+
+run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
+-         	  1087ms  	31.6%     	-99.8%    	0.28      	0.02      	0.03      	0.32      
