@@ -16,10 +16,10 @@ affidavit has several parameters which are described in detail in the correspond
 - **-sep** CSV separator char
 - **-v** (Flag) Enables verbose mode if present
 
-- **-init** Start State configuration. Valid start state options are EMPTY, BEST_ID (H^s from paper = Overlap Sampling), SINGLE_IDs (H^id from paper) and FULL_IDs. Default SINGLE_IDs
-- **-noise** Pessimistic estimate of the amount of noise affidavit should be able to tolerate. The higher, the slower the search will be but the more likely it is that the optimal functions for an attribute will be found despite high noise or a rare effect of the function. Note that this is the opposite semantic of Theta from the paper. In the case of two snapshots of equal size (such as during our evaluation experiments), noise is exactly 1-Theta. Default 0.5
-- **-conf** Confidence that describes the minimum likelihood of finding the optimal function of an attribute if the maximum amount of the configured noise is actually present. Default 0.95
-- **-q** Queue Width, stores up to q different states with the same amount of assignments in the queue at the same time. Default 3
+- **-init** Start State configuration. Valid start state options are EMPTY, BEST_ID (H^s from paper = Overlap Sampling), SINGLE_IDs (H^id from paper) and FULL_IDs. **Default:** SINGLE_IDs
+- **-noise** Pessimistic estimate of the amount of noise affidavit should be able to tolerate. The higher, the slower the search will be but the more likely it is that the optimal functions for an attribute will be found despite high noise or a rare effect of the function. Note that this is the opposite semantic of Theta from the paper. In the case of two snapshots of equal size (such as during our evaluation experiments), noise is exactly 1-Theta. **Default:** 0.5
+- **-conf** Confidence that describes the minimum likelihood of finding the optimal function of an attribute if the maximum amount of the configured noise is actually present. **Default:** 0.95
+- **-q** Queue Width, stores up to q different states with the same amount of assignments in the queue at the same time. **Default:** 3
 - **-b** Branching factor, during each state extension, the b most determined attributes are extended by the b most promising function assignments each
 - **-blocksize** Maximum block size for the overlap sampling
 
