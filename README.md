@@ -59,7 +59,7 @@ There are several parameters that can be configured to control the evaluation. T
 - **-c** Path to text file containing one line per dataset that is supposed to be evaluated. All valid start state options are contained in the [example configuration file](https://github.com/Finkman7/affidavit/blob/master/evalConfigs/dataSets.txt). Lines can be commented out with #
 - **-c** Path to text file containing one line per difficulty setting that is supposed to be evaluated. Valid start state options are "0.3 0.3", "0.5 0.5" and "0.7 0.7" (without quotes). Lines can be commented out with #
 - **-n0** Begin evaluation from the i-th problem instance of each dataset and difficulty setting
-- **-n** Evaluate up to the i-th problem instance of each dataset and difficulty setting
+- **-n** Evaluate up to the i-th problem instance (inclusive) of each dataset and difficulty setting
 - **-bsize** Maximum block size for the overlap sampling
 - **-q** Queue width
 - **-b** Branching Factor
@@ -79,14 +79,16 @@ Furthermore, the evaluation produces a result file for each dataset for each dif
 For rerunning the row scalability experiments, you need the **[affidfavit_scalability.jar](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit_scalability.jar)** which again is a snapshot of affidavit from the time when the row scalability experiments were run.
 
 #### Parameters
-The parameters are the same as [before](https://github.com/Finkman7/affidavit#parameters-1).
-The snapshot for scalability contains one more parameter though that can be used to scale down a problem instance.
+The parameters are the same as [before](https://github.com/Finkman7/affidavit#parameters-1) and should be used accordingly to specify that the evaluation should be performed on one particular problem instance.
+The snapshot for scalability contains one more parameter though that can be used to scale down the problem instance.
 
 - **-scale** Needs to be a decimal in the interval (0-1), scaling factor
 
 An example command to start the evaluation with 200GB memory is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidfavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 10 -bsize 100000 -q 5 -b 2 -v -scale 0.5 > verboseOutput.txt*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidfavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 1 -bsize 100000 -q 5 -b 2 -v -scale 0.5 > verboseOutput.txt*
+
+The experiments in Section 5.3 were performed on the problem instance *flight-500k*. To reproduce the runs, make sure to set the parameters to the same configuration described in the paper.
 
 At the end of the verbose output, there will be line that displays evaluation metrics including runtimes. For example:
 
