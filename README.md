@@ -79,17 +79,16 @@ Furthermore, the evaluation produces a result file for each dataset for each dif
 For rerunning the row scalability experiments, you need the **[affidfavit_scalability.jar](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit_scalability.jar)** which again is a snapshot of affidavit from the time when the row scalability experiments were run.
 
 #### Parameters
-The parameters are the same as in the ["Running Explanation Quality Experiments"](https://github.com/Finkman7/affidavit#parameters-1) snapshot.
-The snapshots contains one more parameter this time that can be used to scale down a problem instance.
+The parameters are the same as [before](https://github.com/Finkman7/affidavit#parameters-1).
+The snapshot for scalability contains one more parameter though that can be used to scale down a problem instance.
 
 - **-scale** Needs to be a decimal in the interval (0-1), scaling factor
-The command to start the evaluation is:
 
 An example command to start the evaluation with 200GB memory is:
 
 */path/to/jdk9+/bin/java -Xmx200g -cp affidfavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 10 -bsize 100000 -q 5 -b 2 -v -scale 0.5 > verboseOutput.txt*
 
-At the end of the verbose output, there will be line that displays evaluation metrics including runtime as such:
+At the end of the verbose output, there will be line that displays evaluation metrics including runtimes. For example:
 
 *run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
 -         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
