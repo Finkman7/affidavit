@@ -91,4 +91,4 @@ An example command to start the evaluation with 200GB memory is:
 At the end of the verbose output, there will be line that displays evaluation metrics including runtimes. For example:
 
 *run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
--         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
+\-         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
