@@ -56,7 +56,7 @@ There are several parameters that can be configured to control the evaluation. T
 
 - **-t** Path to parent folder containing the subfolders for the different datasets from *datasets_affidavit.zip*
 - **-a** Path to text file containing one line per start state configuration that is supposed to be evaluated. Valid start state options are BEST_IDs (H^s from paper = Overlap Sampling) and SINGLE_IDs (H^id from paper). Lines can be commented out with #
-- **-c** Path to text file containing one line per dataset that is supposed to be evaluated. All valid start state options are contained in the [example configuration file](https://github.com/Finkman7/affidavit/blob/master/evalConfigs/dataSets.txt). Lines can be commented out with #
+- **-c** Path to text file containing one line per dataset that is supposed to be evaluated. All valid start state options are contained in the [example configuration file](http://data.dws.informatik.uni-mannheim.de/affidavit/evalConfigs/dataSets.txt). Lines can be commented out with #
 - **-c** Path to text file containing one line per difficulty setting that is supposed to be evaluated. Valid start state options are "0.3 0.3", "0.5 0.5" and "0.7 0.7" (without quotes). Lines can be commented out with #
 - **-n0** Begin evaluation from the i-th problem instance of each dataset and difficulty setting
 - **-n** Evaluate up to the i-th problem instance (inclusive) of each dataset and difficulty setting
