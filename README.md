@@ -3,7 +3,7 @@ Algorithm For Function-Inducing Delta Analysis Via Integration of Tables
 
 **affidavit** is a solution for comparing two snapshots of a relational table with a fixed schema to identify record deletions, insertions and in particular updates in the form of attribute-specific value transformations. It is an implementation of the algorithms described in the corresponding research paper which is currently under review and can therefore not be published yet. If it gets accepted, a link to the paper will be added in this place.
 
-The newest version of affidavit is available [here]().
+The newest version of affidavit is available [here](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit.jar).
 affidavit requires Java 9 or later to be run.
 
 ## Configuration
@@ -31,7 +31,7 @@ An example command to start affidavit with 200GB memory is:
 Note that most parameters could have been omitted in this case as they were simply set to their default values.
 
 ## Reproducing Experimental Results from the Paper
-If you are interested in reproducting the experimental results from the paper yourself or try a different algorithm on the dataset, you can download all files you need from [here](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit.jar).
+If you are interested in reproducting the experimental results from the paper yourself or try a different algorithm on the dataset, you can download all files you need from [here](http://data.dws.informatik.uni-mannheim.de/affidavit/).
 
 In any case, you need to download and extract the **[datasets_affidavit.zip](http://data.dws.informatik.uni-mannheim.de/affidavit/datasets_affidavit.zip)** which contains ten problem instances for each dataset used in Section 5.2 and one problem instance for flight-500k used in Section 5.3.
 
