@@ -14,7 +14,7 @@ affidavit has several parameters which are described in detail in the correspond
 - **-s** Path to source csv file containing all source records
 - **-t** Path to target csv file containing all target records
 - **-sep** CSV separator char
-- **-v** (No Parameter) Enables verbose mode if present
+- **-v** (Flag) Enables verbose mode if present
 
 - **-init** Start State configuration. Valid start state options are EMPTY, BEST_ID (H^s from paper = Overlap Sampling), SINGLE_IDs (H^id from paper) and FULL_IDs. Default SINGLE_IDs
 - **-noise** Pessimistic estimate of the amount of noise affidavit should be able to tolerate. The higher, the slower the search will be but the more likely it is that the optimal functions for an attribute will be found despite high noise or a rare effect of the function. Note that this is the opposite semantic of Theta from the paper. In the case of two snapshots of equal size (such as during our evaluation experiments), noise is exactly 1-Theta. Default 0.5
@@ -58,7 +58,7 @@ There are several parameters that can be configured to control the evaluation. T
 - **-bsize** Maximum block size for the overlap sampling
 - **-q** Queue width (\varrho)
 - **-b** Branching Factor (\beta)
-- **-v** (No Parameter) Enables verbose mode if present
+- **-v** (Flag) Enables verbose mode if present
 
 As branching factor and queue width need to be specified, the experiments from the paper need to be reproduced by two separate calls for the two start state options, each with the correspoding branching factor and queue width setting.
 
