@@ -33,7 +33,7 @@ Note that most parameters could have been omitted in this case as they were simp
 ## Reproducing Experimental Results from the Paper
 If you are interested in reproducting the experimental results from the paper yourself or try a different algorithm on the dataset, you can download all files you need from [here](http://data.dws.informatik.uni-mannheim.de/affidavit/).
 
-In any case, you need to download and extract the **datasets_affidavit.zip** which contains ten problem instances for each dataset used in Section 5.2 and one problem instance for flight-500k used in Section 5.3.
+In any case, you need to download and extract the **[datasets_affidavit.zip](http://data.dws.informatik.uni-mannheim.de/affidavit/datasets_affidavit.zip)** which contains ten problem instances for each dataset used in Section 5.2 and one problem instance for flight-500k used in Section 5.3.
 
 ### Affidavit Dataset
 The Affidavit Dataset consists of ten problem instances per [dataset](https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html#c168191) created for three settings of varying difficulty.
@@ -49,7 +49,7 @@ Every problem instance consists of several different files:
 The only data that may be used to solve the task, are the source records as a whole and the target records as a whole with no information how they are separated into core and non-core, of course. The rest of the data is only used in the evaluation to judge the result.
 
 ### Running Explanation Quality Experiments
-For rerunning the explanation quality experiments, you need the **affidfavit_experiments.jar** which is a snapshot of affidavit from the time when the experiments were run.
+For rerunning the explanation quality experiments, you need the **[affidfavit_experiments.jar](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit_experiments.jar)** which is a snapshot of affidavit from the time when the experiments were run.
 
 #### Parameters
 There are several parameters that can be configured to control the evaluation. There are [example configuration files](https://github.com/Finkman7/affidavit/tree/master/evalConfigs) available which can be used to run the experiments with both start state options from the paper on all three difficulties on all datasets.
@@ -76,7 +76,7 @@ From the verbose output, one can trace the search process of the algorithm confi
 Furthermore, the evaluation produces a result file for each dataset for each difficulty setting in the corresponding subfolder. It has the name pattern *Result_STARTSTATESETTING_DATASET_DIFFICULTY.tsv* and contains the evaluation metrics from the paper and some more (delta_core is called aligned and delta_costs is called costs) for each problem instance as well as the macro average. The [output of our experiments on the NURSERY dataset for setting (0.3, 0.3)](https://github.com/Finkman7/affidavit/tree/master/exampleResult) is available for both start state configurations as an example.
 
 ### Running Scalability Experiments
-For rerunning the row scalability experiments, you need the **affidfavit_scalability.jar** which again is a snapshot of affidavit from the time when the row scalability experiments were run.
+For rerunning the row scalability experiments, you need the **[affidfavit_scalability.jar](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit_scalability.jar)** which again is a snapshot of affidavit from the time when the row scalability experiments were run.
 
 #### Parameters
 
