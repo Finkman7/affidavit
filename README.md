@@ -95,5 +95,5 @@ At the end of the verbose output, there will be line that displays evaluation me
 *run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
 \-         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
 
-## Sourec Code
-The source code of affidavit will be made available in the near future once refactoring is finished. There will be a small guide that describes how to implement a short Java interface to support new meta functions which we did not implement yet.
+## Source Code
+The source code of affidavit will be made available in the near future once refactoring is finished. There will be a small guide that describes how to implement a short Java interface to support new meta functions which we did not implement yet. This way, affidavit can be quickly extended to suit individual needs.
