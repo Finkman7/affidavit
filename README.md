@@ -26,7 +26,7 @@ affidavit has several parameters which are described in detail in the correspond
 
 An example command to start affidavit with 200GB memory is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidfavit.jar affidavit.main.Main -s data/vanilla/Source.csv -t  data/vanilla/Target.csv -v -sep | -init SINGLE_IDs -noise 0.5 -conf 0.95 -q 3 -b 2*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit.jar affidavit.main.Main -s data/vanilla/Source.csv -t  data/vanilla/Target.csv -v -sep | -init SINGLE_IDs -noise 0.5 -conf 0.95 -q 3 -b 2*
 
 Note that most parameters could have been omitted in this case as they were simply set to their default values.
 
@@ -69,7 +69,7 @@ As branching factor and queue width need to be specified, the experiments from t
 
 An example command to start the evaluation with 200GB memory is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidfavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 10 -bsize 100000 -q 5 -b 2 -v > verboseOutput.txt*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 10 -bsize 100000 -q 5 -b 2 -v > verboseOutput.txt*
 
 From the verbose output, one can trace the search process of the algorithm configurations for each problem instance as well as the resulting explanation's attribute functions and costs in each case. The [output of our experiments on the NURSERY dataset](https://github.com/Finkman7/affidavit/tree/master/exampleOutput) is available for both start state configurations as an example.
 
@@ -86,7 +86,7 @@ The snapshot for scalability contains one more parameter though that can be used
 
 An example command to start the evaluation with 200GB memory is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidfavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 1 -bsize 100000 -q 5 -b 2 -v -scale 0.5 > verboseOutput.txt*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit_experiments.jar affidavit.eval.Evaluator -t "dataSets" -a "config/startStates.txt" -f "config/dataSets.txt" -c "config/difficulties.txt" -n0 1 -n 1 -bsize 100000 -q 5 -b 2 -v -scale 0.5 > verboseOutput.txt*
 
 The experiments in Section 5.3 were performed on the problem instance *flight-500k*. To reproduce the runs, make sure to set the parameters to the same configuration described in the paper.
 
