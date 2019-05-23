@@ -26,7 +26,7 @@ affidavit has several parameters which are described in detail in the correspond
 
 An example command to start affidavit with 200GB memory is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit.jar affidavit.main.Main -s data/vanilla/Source.csv -t  data/vanilla/Target.csv -v -sep "|" -init SINGLE_IDs -noise 0.5 -conf 0.95 -q 3 -b 2*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit.jar affidavit.main.Main -s Source.csv -t  Target.csv -v -sep "|" -init SINGLE_IDs -noise 0.5 -conf 0.95 -q 3 -b 2*
 
 Note that most parameters could have been omitted in this case as they were simply set to their default values.
 
