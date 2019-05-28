@@ -97,3 +97,6 @@ At the end of the verbose output, there will be line that displays evaluation me
 
 *run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
 \-         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
+
+## Contact
+Should you have any questions, please do not hestitate to contact manuel@informatik.uni-mannheim.de with christian@informatik.uni-mannheim.de in CC.
