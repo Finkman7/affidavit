@@ -4,7 +4,10 @@ Algorithm For Function-Inducing Delta Analysis Via Integration of Tables
 **affidavit** is a solution for comparing two snapshots of a relational table with a fixed schema to identify record deletions, insertions and in particular updates in the form of attribute-specific value transformations. It is an implementation of the algorithms described in the corresponding research paper which is currently under review and can therefore not be published yet. If it gets accepted, a link to the paper will be added in this place.
 
 The newest version of affidavit is available [here](http://data.dws.informatik.uni-mannheim.de/affidavit/affidavit.jar).
-affidavit requires Java 9 or later to be run.
+affidavit requires Java 8 or later to be run (Java 9 or later for the Evaluation Experiments).
+
+## Source Code
+The source code of affidavit will be made available in the near future once refactoring is finished. Affidavit can support arbitrary meta functions whose parameters are learnable from one input-output example. There will be a small guide that describes how to implement a short Java interface to support new meta functions which we did not implement yet. This way, affidavit can be quickly customized for individual domains or use cases.
 
 ## Configuration
 Affidavit currently takes as input two csv files that contain the source and target records, respectively. Both files need to begin with a header line which is meant to describe the attribute names. An [example](http://data.dws.informatik.uni-mannheim.de/affidavit/exampleSnapshots) is provided for the tables in Figure 1 of the paper. For the future, there are plans to extend affidavit to be able to connect via JDBC to various DBMS.
@@ -24,9 +27,9 @@ affidavit has several parameters which are described in detail in the correspond
 - **-b** Branching factor, during each state extension, the b most determined attributes are extended by the b most promising function assignments each. **Default:** 3
 - **-blocksize** Maximum block size for the overlap sampling. **Default:** 100000
 
-An example command to start affidavit with 200GB memory is:
+An example command to start affidavit on the [example snapshots](http://data.dws.informatik.uni-mannheim.de/affidavit/exampleSnapshots) is:
 
-*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit.jar affidavit.main.Main -s Source.csv -t  Target.csv -v -sep "|" -init SINGLE_IDs -noise 0.5 -conf 0.95 -q 3 -b 2*
+*/path/to/jdk9+/bin/java -Xmx200g -cp affidavit.jar affidavit.main.Main -s Source.csv -t  Target.csv -v -sep "|" -init SINGLE_IDs -noise 0.9 -conf 0.95 -q 3 -b 2*
 
 Note that most parameters could have been omitted in this case as they were simply set to their default values.
 
@@ -94,6 +97,3 @@ At the end of the verbose output, there will be line that displays evaluation me
 
 *run       	runtime   	costs     	aligned   	prec      	rec       	f1        	acc       
 \-         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
-
-## Source Code
-The source code of affidavit will be made available in the near future once refactoring is finished. There will be a small guide that describes how to implement a short Java interface to support new meta functions which we did not implement yet. This way, affidavit can be quickly extended to suit individual needs.
