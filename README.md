@@ -7,7 +7,7 @@ The newest version of affidavit is available [here](http://data.dws.informatik.u
 affidavit requires Java 8 or later to be run (Java 9 or later for the Evaluation Experiments).
 
 ## Source Code
-The source code of affidavit will be made available in the near future once refactoring is finished. Affidavit can support arbitrary meta functions whose parameters are learnable from one input-output example. There will be a small guide that describes how to implement a short Java interface to support new meta functions which we did not implement yet. This way, affidavit can be quickly customized for individual domains or use cases.
+The source code of affidavit will be made available in the near future once refactoring is finished. Affidavit can support arbitrary meta functions whose parameters are learnable from one input-output example. There will be a small guide that describes how to implement a short Java interface to support new meta functions which it does not support natively. This way, affidavit can be quickly customized for individual domains or use cases.
 
 ## Configuration
 Affidavit currently takes as input two csv files that contain the source and target records, respectively. Both files need to begin with a header line which is meant to describe the attribute names. An [example](http://data.dws.informatik.uni-mannheim.de/affidavit/exampleSnapshots) is provided for the tables in Figure 1 of the paper. For the future, there are plans to extend affidavit to be able to connect via JDBC to various DBMS.
