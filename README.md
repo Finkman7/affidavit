@@ -99,4 +99,6 @@ At the end of the verbose output, there will be line that displays evaluation me
 \-         	298035ms  	0.0%      	0.0%      	1.00      	1.00      	1.00      	1.00*
 
 ## Contact
+Affidavit was developed at the University of Mannheim by Manuel Fink, Christian Meilicke and Heiner Stuckenschmidt.
+
 In case of any questions, please contact manuel@informatik.uni-mannheim.de with christian@informatik.uni-mannheim.de in CC.
