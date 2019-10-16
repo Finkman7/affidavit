@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import affidavit.Affidavit;
+import affidavit.config.Config;
 import affidavit.data.Block;
 import affidavit.data.BlockIndex;
 import affidavit.data.BlockingResult;
@@ -32,7 +33,6 @@ public class State implements Serializable {
 	private BlockingResult		blockingResult;
 	private AlignmentMetrics	metrics	= new AlignmentMetrics();;
 	private Collection<State>	children;
-	private long				transformationHeuristicLowerbound;
 
 	public State() {
 		stateAssignments = new Assignment[Affidavit.ENVIRONMENT.columnCount()];
@@ -77,7 +77,7 @@ public class State implements Serializable {
 	}
 
 	public long getCosts() {
-		return getTransformationCosts() + metrics.getCosts();
+		return Math.round(2 * (1 - Config.ALPHA) * getTransformationCosts() + 2 * Config.ALPHA * metrics.getCosts());
 	}
 
 	public Collection<Integer> getUnassignedAttributes() {
@@ -188,10 +188,6 @@ public class State implements Serializable {
 	public void setMetrics(AlignmentMetrics metrics) {
 		this.metrics.droppedSourceCount = metrics.droppedSourceCount;
 		this.metrics.insertedTargetCount = metrics.insertedTargetCount;
-	}
-
-	public void setTransformationHeuristicLowerbound(long transformationHeuristicLowerbound) {
-		this.transformationHeuristicLowerbound = transformationHeuristicLowerbound;
 	}
 
 	public boolean containsDiamonds() {
@@ -374,9 +370,7 @@ public class State implements Serializable {
 	}
 
 	private long getTransformationCosts() {
-		transformationHeuristicLowerbound = 0;
-		return getBlockingCriteria().values().stream().mapToLong(Transformation::getCosts).sum()
-				+ transformationHeuristicLowerbound;
+		return getBlockingCriteria().values().stream().mapToLong(Transformation::getCosts).sum();
 	}
 
 	public void trimMapTransformations() {

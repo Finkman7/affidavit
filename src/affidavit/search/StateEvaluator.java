@@ -2,8 +2,6 @@ package affidavit.search;
 
 import java.util.Map;
 
-import affidavit.config.Config;
-import affidavit.config.InitializationStrategy;
 import affidavit.data.Block;
 import affidavit.search.state.State;
 
@@ -63,27 +61,5 @@ public class StateEvaluator {
 		}
 
 		state.setMetrics(minimumDroppedSourceCount, minimumInsertedTargetCount);
-
-		if (withHeuristic) {
-			state.setTransformationHeuristicLowerbound(calculateAttributeFunctionLowerbound());
-		}
-	}
-
-	private long calculateAttributeFunctionLowerbound() {
-		if (Config.INITIALIZATION_STRATEGY.equals(InitializationStrategy.SINGLE_IDs)) {
-			return singleIDStates.entrySet().stream().filter(e -> {
-				boolean attributeIsUnassigned = state.getUnassignedAttributes().contains(e.getKey());
-				AlignmentMetrics idStateMetrics = e.getValue().getMetrics();
-				AlignmentMetrics stateMetrics = state.getMetrics();
-				boolean metricsAreWorse = idStateMetrics.droppedSourceCount > stateMetrics.droppedSourceCount
-						|| idStateMetrics.insertedTargetCount > stateMetrics.insertedTargetCount;
-
-				return attributeIsUnassigned && metricsAreWorse;
-			}).count();
-		} else if (Config.INITIALIZATION_STRATEGY.equals(InitializationStrategy.BEST_ID)) {
-			return state.getUnassignedAttributes().size();
-		}
-
-		return 0;
 	}
 }

@@ -43,7 +43,7 @@ public class CommandLineHandler {
 		}
 
 		if (cmd.hasOption("a")) {
-			Config.ALPHA = Integer.valueOf(cmd.getOptionValue("a"));
+			Config.ALPHA = Double.valueOf(cmd.getOptionValue("a"));
 		}
 
 		if (cmd.hasOption("q")) {
